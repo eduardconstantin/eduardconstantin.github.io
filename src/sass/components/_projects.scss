@@ -1,0 +1,111 @@
+.projects{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    perspective: 50rem;
+    
+    h1{
+        font-family: $main-font;
+        font-size: 2.2rem;
+        color: $text-color;
+        position: relative;
+        margin-bottom: 1rem;
+
+        &::after{
+            content: "";
+            width: 20%;
+            height: 2px;
+            background-color: #AFEB70;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    }
+}
+.flicking-viewport {
+    margin-right: auto;
+    transition: height .5s;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+    margin-bottom: 35px;
+}
+
+.sliderContainer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.slide {
+    width: 300px;
+    height: 100%;
+    align-items: flex-end;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    margin-right: 10px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+
+    .links{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: hsla(0, 0%, 0%, 0.2);
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+
+        a{
+            width: 20px;
+            height: 20px;
+            background-position: center;
+            background-size: 100%;
+            filter: drop-shadow(0px 0px 5px #346600);
+        }
+    }
+
+    p{
+        width: 100%;
+        height: 40px;
+        padding: 10px 0px;
+        margin: 0;
+        position: relative;
+        color: #346600;
+        font-family: $main-font;
+        font-weight: 600;
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &.selected{
+        .expand{
+            background-color: grey;
+            width: 50%;
+            height: 20%;
+        }
+    }
+}
