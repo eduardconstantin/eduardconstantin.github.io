@@ -4,8 +4,8 @@ My personal portfolio which features the most recent projects I worked on as wel
 To view a live example, **[click here](https://eduardconstantin.github.io)**
 
 ## Sections 📚
-✔️ About me
-✔️ Skills
+✔️ About me \
+✔️ Skills \
 ✔️ Projects
 
 ## Tools Used 🛠️
