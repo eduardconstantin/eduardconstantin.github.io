@@ -1,7 +1,7 @@
 # Personal Portfolio
 
-My personal portfolio which features the most recent projects I worked on as well as my resume and technical skills.
-To view a live example, **[click here](https://eduardconstantin.github.io)**
+My personal portfolio which features the most recent projects I worked on as well as my resume and technical skills. \
+The website is live **[here.](https://eduardconstantin.github.io)**
 
 ## Sections 📚
 ✔️ About me \
