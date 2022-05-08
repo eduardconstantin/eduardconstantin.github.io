@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d780dd1f.css",
-    "main.js": "/static/js/main.5995315e.js",
+    "main.js": "/static/js/main.11ee330f.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/Gradient_7.jpg": "/static/media/Gradient_7.f7df5fd846004ce178ec.jpg",
     "static/media/dissertation.png": "/static/media/dissertation.e9b84ec7a27ce201cef9.png",
@@ -29,10 +29,10 @@
     "static/media/github.svg": "/static/media/github.b83d4804e86ff27ac1ce7eacd4236de4.svg",
     "index.html": "/index.html",
     "main.d780dd1f.css.map": "/static/css/main.d780dd1f.css.map",
-    "main.5995315e.js.map": "/static/js/main.5995315e.js.map"
+    "main.11ee330f.js.map": "/static/js/main.11ee330f.js.map"
   },
   "entrypoints": [
     "static/css/main.d780dd1f.css",
-    "static/js/main.5995315e.js"
+    "static/js/main.11ee330f.js"
   ]
 }
