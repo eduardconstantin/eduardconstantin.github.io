@@ -22,6 +22,7 @@ import godofwar from '../../images/projects/godofwar.png'
 import itlogo from '../../images/projects/intimelogo.png'
 import nyoologo from '../../images/projects/ntoologo.png'
 import mplogo from '../../images/projects/mplogo.png'
+import btnanim from '../../images/projects/btnAnim.png'
 import navui from '../../images/projects/navui.png'
 
 const web = [
@@ -39,7 +40,7 @@ const design = [
     {name: "In time Logo", date: "2020-04-20", cover: itlogo, links:[{icon: dribbbleLink, link:"https://dribbble.com/shots/16788202-IN-TIME-Logo-design"}]},
     {name: "NY Open Offices Logo", date: "2018-05-12", cover: nyoologo, links:[{icon: dribbbleLink, link:"https://dribbble.com/shots/18038998-New-York-Open-Offices-Logo-design"}]},
     {name: "Navigation Menu Animation", date: "2022-03-20", cover: navui, links:[{icon: dribbbleLink, link:"https://dribbble.com/shots/17766382-Navigation-menu-Animation-concept"}]},
-    {name: "Button Animation", date: "2022-05-01", cover: mplogo, links:[{icon: gitLink, link:"https://github.com/eduardconstantin/Comic-book-button-anim"}, {icon: dribbbleLink, link:"https://dribbble.com/shots/18145123-Button-Animation"}]},
+    {name: "Button Animation", date: "2022-05-01", cover: btnanim, links:[{icon: gitLink, link:"https://github.com/eduardconstantin/Comic-book-button-anim"}, {icon: dribbbleLink, link:"https://dribbble.com/shots/18145123-Button-Animation"}]},
     // {name: "Midnight Pulse Logo", date: "2018-07-17", cover: mplogo, links:[{icon: dribbbleLink, link:"#"}]}
 ]
 const game = [
