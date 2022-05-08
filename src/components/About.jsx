@@ -34,7 +34,7 @@ export default function About() {
         <motion.section className='about' variants={aboutAnim} initial='init' animate='anim'>
             <motion.h3 variants={iconsAnim}>Hello there, my name is</motion.h3>
             <motion.h2 variants={nameAnim}>Eduard Ibinceanu</motion.h2>
-            {/* <motion.h5 variants={iconsAnim}>- Software Developer @ Arctic -</motion.h5> */}
+            <motion.h5 variants={iconsAnim}>- Software Developer @ Arctic -</motion.h5>
 
             <motion.div className='skillsContainer' variants={iconsAnim}>
                 {skillHover.map((item, i) => (
