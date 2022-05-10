@@ -26,7 +26,7 @@ import btnanim from '../../images/projects/btnAnim.png'
 import navui from '../../images/projects/navui.png'
 
 const web = [
-    {name: "Portfolio", date: "2022-05-08", cover: portfolio, links:[{icon: gitLink, link:"https://eduardconstantin.github.io"}]},
+    {name: "Portfolio", date: "2022-05-08", cover: portfolio, links:[{icon: gitLink, link:"https://github.com/eduardconstantin/eduardconstantin.github.io"}]},
     {name: "Livrator.ro", date: "2022-04-30", cover: livrator, links:[{icon: webLink, link:"https://www.livrator.ro"}]},
     {name: "Ghiceste cuvantul", date: "2022-03-20", cover: ghicicuvantul, links:[{icon: webLink, link:"#"}]},
     {name: "Xbox Dashboard", date: "2022-03-06", cover: xboxdash, links:[{icon: dribbbleLink, link:"https://dribbble.com/shots/17656116-Xbox-Dashboard-Animation"}]},

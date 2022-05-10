@@ -6,6 +6,7 @@ const aboutAnim = {
     },
     anim:{
         transition: {
+            delay: 0.2,
             staggerChildren: 0.3
         }
     }
