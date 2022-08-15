@@ -1,0 +1,26 @@
+.counterView {
+	color: white;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row-reverse;
+	overflow: hidden;
+	font-size: 96px;
+	position: relative;
+}
+.counterContainer {
+	position: relative;
+}
+.counterColumn {
+	position: absolute;
+	height: auto;
+	bottom: 0;
+}
+.digit {
+	height: fit-content;
+}
+.digitPlaceholder {
+	visibility: hidden;
+	height: fit-content;
+	display: flex;
+}

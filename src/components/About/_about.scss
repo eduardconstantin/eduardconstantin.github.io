@@ -1,0 +1,173 @@
+.about {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	z-index: 9;
+	font-family: $main-font;
+
+	h5 {
+		color: $text-color;
+		letter-spacing: 5px;
+		margin-bottom: 40px;
+		user-select: none;
+	}
+
+	h3 {
+		font-weight: 600;
+		font-style: italic;
+		font-size: max(1.5rem, 1.8vw);
+		color: $text-color;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		margin-bottom: -10px;
+		user-select: none;
+	}
+
+	h2 {
+		position: relative;
+		font-family: 'Stay Dreaming';
+		font-size: 200px;
+		margin: 0;
+		width: 1000px;
+		background-size: 300%;
+		color: $text-color;
+		background-image: url(../../Assets/images/Gradient_7.jpg);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		user-select: none;
+	}
+
+	@keyframes hue {
+		from {
+			-webkit-filter: hue-rotate(0deg);
+		}
+		to {
+			-webkit-filter: hue-rotate(-360deg);
+		}
+
+		0% {
+			background-position-x: 0%;
+		}
+		25% {
+			background-position-x: 100%;
+		}
+		75% {
+			background-position-x: 80%;
+		}
+		100% {
+			background-position-x: 0%;
+		}
+	}
+
+	.skillsContainer {
+		width: 100%;
+		position: relative;
+		z-index: 9;
+		display: flex;
+		justify-content: center;
+		gap: 45px;
+
+		.skill {
+			width: 60px;
+			height: 60px;
+			border-radius: 10px;
+			background-color: #6ec926;
+			position: relative;
+			display: flex;
+			justify-content: center;
+
+			.skillName {
+				position: absolute;
+				font-family: $main-font;
+				top: 0;
+				margin: auto;
+				color: $text-color;
+				font-size: 11px;
+				font-weight: 600;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transform: rotateX(90deg);
+				user-select: none;
+			}
+
+			&:hover:before {
+				background-size: 70%;
+				filter: saturate(4);
+				animation: shake 0.2s linear;
+				-webkit-animation: shake 0.2s linear;
+			}
+
+			@keyframes shake {
+				0% {
+					background-position: 50% 50%;
+					filter: saturate(1) drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) drop-shadow(0px 0px 0px rgba(0, 0, 255, 0));
+				}
+				25% {
+					background-position: 20% 80%;
+					filter: saturate(3) drop-shadow(3px -2px 0px rgba(255, 0, 0, 0.7)) drop-shadow(-2px 3px 0px rgba(0, 0, 255, 0.7));
+				}
+				75% {
+					background-position: 80% 20%;
+					filter: saturate(3) drop-shadow(-2px 3px 0px rgba(255, 0, 0, 0.7)) drop-shadow(3px -2px 0px rgba(0, 0, 255, 0.7));
+				}
+				100% {
+					background-position: 50% 50%;
+					filter: saturate(1) drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) drop-shadow(0px 0px 0px rgba(0, 0, 255, 0));
+				}
+			}
+
+			&:before {
+				content: '';
+				border-radius: 10px;
+				border: 1px solid rgba(200, 242, 155, 0.3);
+				background-color: rgba(200, 242, 155, 0.1);
+				backdrop-filter: blur(10px);
+				filter: saturate(1);
+				background-image: url(../../Assets/images/dots.png);
+				background-size: 90%;
+				background-position: center;
+				margin: auto;
+				width: 100%;
+				height: 100%;
+				display: block;
+				transform: rotate(45deg);
+				transition: all 0.15s;
+			}
+
+			.icon {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				display: block;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 60%;
+			}
+
+			&:nth-child(1) {
+				.icon {
+					background-image: url(../../Assets/images/icons/web.png);
+				}
+			}
+			&:nth-child(2) {
+				.icon {
+					background-image: url(../../Assets/images/icons/gameDev.png);
+				}
+			}
+			&:nth-child(3) {
+				.icon {
+					background-image: url(../../Assets/images/icons/design.png);
+					background-position: 50% 58%;
+				}
+			}
+		}
+	}
+}
