@@ -5,7 +5,7 @@ import { iconContainerAnim, iconsAnim, pageTransitionAnim } from './components/A
 
 import backgroundIcons from './components/Data/backgroundIcons';
 
-import Menu from './components/Menu';
+import Menu from './components/Menu/Menu';
 import Welcome from './components/Welcome/Welcome';
 import About from './components/About/About';
 import Skills from './components/Skills';
