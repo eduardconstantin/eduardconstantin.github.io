@@ -3,7 +3,7 @@ import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 
 import { iconContainerAnim, iconsAnim, pageTransitionAnim } from './App.anim';
 
-import backgroundIcons from './components/Data/backgroundIcons';
+import backgroundIcons from './App.constants';
 
 import Menu from './components/Menu/Menu';
 import Welcome from './components/Welcome/Welcome';

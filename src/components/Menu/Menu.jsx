@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 
 import { menuContentAnim, menuIconElemAnim, socialAnim, menuIcon, menuAnim } from './Menu.anim';
-import socialLinks from '../Data/socialLinks';
+import socialLinks from './Menu.constants';
 
 export default function Menu({ pageNo, selectPage }) {
 	const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ProjectsSlider from './ProjectsSlider/ProjectsSlider';
-import { web, game, design } from '../Data/projectsData.js';
+import { web, game, design } from './Projects.constants';
 import { projectsAnim } from './Projects.anim';
 
 export default function Projects() {
