@@ -21,9 +21,9 @@ import smarthome from '../../Assets/images/projects/smarthome.png';
 import godofwar from '../../Assets/images/projects/godofwar.png';
 import itlogo from '../../Assets/images/projects/intimelogo.png';
 import nyoologo from '../../Assets/images/projects/ntoologo.png';
-import mplogo from '../../Assets/images/projects/mplogo.png';
 import btnanim from '../../Assets/images/projects/btnAnim.png';
 import navui from '../../Assets/images/projects/navui.png';
+// import mplogo from '../../Assets/images/projects/mplogo.png';
 
 const web = [
 	{

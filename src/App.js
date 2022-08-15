@@ -71,7 +71,7 @@ export default function App() {
 										className='iconWrapper'
 										style={{ width: iconSize, height: iconSize }}
 									>
-										<img src={src} width={52} style={{ opacity: opacity }} />
+										<img alt='icon' src={src} width={52} style={{ opacity: opacity }} />
 									</motion.div>
 								))}
 							</motion.div>
@@ -93,7 +93,7 @@ export default function App() {
 										className='iconWrapper'
 										style={{ width: iconSize, height: iconSize }}
 									>
-										<img src={src} width={52} style={{ opacity: opacity }} />
+										<img alt='icon' src={src} width={52} style={{ opacity: opacity }} />
 									</motion.div>
 								))}
 							</motion.div>

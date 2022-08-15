@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 
 import { menuContentAnim, menuIconElemAnim, socialAnim, menuIcon, menuAnim } from './Menu.anim';
@@ -12,11 +12,14 @@ export default function Menu({ pageNo, selectPage }) {
 	const skillRef = useRef();
 	const projRef = useRef();
 
-	const menuHover = (target) => {
-		x.set(target.offsetLeft + (target.offsetWidth - 100) / 2);
-	};
+	const menuHover = useCallback(
+		(target) => {
+			x.set(target.offsetLeft + (target.offsetWidth - 100) / 2);
+		},
+		[x]
+	);
 
-	const activeMenu = () => {
+	const activeMenu = useCallback(() => {
 		if (pageNo === 0) {
 			menuHover(aboutRef.current);
 		} else if (pageNo === 1) {
@@ -24,11 +27,11 @@ export default function Menu({ pageNo, selectPage }) {
 		} else {
 			menuHover(projRef.current);
 		}
-	};
+	}, [pageNo, menuHover]);
 
 	useEffect(() => {
 		activeMenu();
-	}, []);
+	}, [activeMenu]);
 
 	return (
 		<motion.section className='menuSection' variants={menuAnim} initial='init' animate='anim'>

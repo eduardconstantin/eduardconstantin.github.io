@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import NumberColumn from './NumberColumn/NumberColumn';
-import { digitAnim, digitCont } from './Counter.anim';
+import { digitCont } from './Counter.anim';
 
-export default function Counter({ numberValue, decimalDigits }) {
+export default function Counter({ numberValue }) {
 	const numArray = new Intl.NumberFormat().format(numberValue).split('').reverse();
 
 	return (
