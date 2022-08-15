@@ -5,11 +5,11 @@ import { iconContainerAnim, iconsAnim, pageTransitionAnim } from './App.anim';
 
 import backgroundIcons from './App.constants';
 
-import Menu from './components/Menu/Menu';
-import Welcome from './components/Welcome/Welcome';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Projects from './components/Projects/Projects';
+import Menu from './Components/Menu/Menu';
+import Welcome from './Components/Welcome/Welcome';
+import About from './Components/About/About';
+import Skills from './Components/Skills/Skills';
+import Projects from './Components/Projects/Projects';
 
 export default function App() {
 	const [hasLoaded, setHasLoaded] = useState(false);
