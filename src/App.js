@@ -8,7 +8,7 @@ import backgroundIcons from './components/Data/backgroundIcons';
 import Menu from './components/Menu/Menu';
 import Welcome from './components/Welcome/Welcome';
 import About from './components/About/About';
-import Skills from './components/Skills';
+import Skills from './components/Skills/Skills';
 import Projects from './components/Projects';
 
 export default function App() {
