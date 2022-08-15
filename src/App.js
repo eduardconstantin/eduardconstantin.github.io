@@ -1,15 +1,8 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
-
+import { Menu, Welcome, About, Skills, Projects } from './Components';
 import { iconContainerAnim, iconsAnim, pageTransitionAnim } from './App.anim';
-
 import backgroundIcons from './App.constants';
-
-import Menu from './Components/Menu/Menu';
-import Welcome from './Components/Welcome/Welcome';
-import About from './Components/About/About';
-import Skills from './Components/Skills/Skills';
-import Projects from './Components/Projects/Projects';
 
 export default function App() {
 	const [hasLoaded, setHasLoaded] = useState(false);
