@@ -7,7 +7,7 @@ import backgroundIcons from './components/Data/backgroundIcons';
 
 import Menu from './components/Menu';
 import Welcome from './components/Welcome/Welcome';
-import About from './components/About';
+import About from './components/About/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 
