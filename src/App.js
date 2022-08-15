@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 
-import { iconContainerAnim, iconsAnim, pageTransitionAnim } from './components/Animations/mainAnimations';
+import { iconContainerAnim, iconsAnim, pageTransitionAnim } from './App.anim';
 
 import backgroundIcons from './components/Data/backgroundIcons';
 
