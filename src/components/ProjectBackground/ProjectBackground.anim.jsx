@@ -1,9 +1,8 @@
 export const iconContainerAnim = {
 	init: {
-		opacity: 1,
+		filter: 'blur(0px)',
 	},
 	anim: {
-		opacity: 1,
 		filter: 'blur(0px)',
 	},
 	end: {
@@ -18,11 +17,9 @@ export const iconContainerAnim = {
 
 export const iconsAnim = {
 	init: {
-		opacity: 0,
 		scale: 0,
 	},
 	anim: (i) => ({
-		opacity: 1,
 		scale: 1,
 		transition: {
 			delay: i * 1.2,
@@ -30,4 +27,7 @@ export const iconsAnim = {
 			damping: 11,
 		},
 	}),
+	end: {
+		scale: 1,
+	},
 };

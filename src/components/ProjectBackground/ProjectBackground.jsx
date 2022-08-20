@@ -3,26 +3,35 @@ import { motion } from 'framer-motion';
 import { backgroundIcons } from './ProjectBackground.constants';
 import { iconContainerAnim, iconsAnim } from './ProjectBackground.anim';
 
+const MIN_SCREEN_WIDTH = 320;
+const MAX_SCREEN_WIDTH = 4096;
+
+const MIN_ICON_SIZE = 60;
+const MAX_ICON_SIZE = 150;
+
 export const generateBackground = () => {
-	const iconsArray = [];
-	const iconSize = 100;
+	const iconsData = [];
+
 	const windowHeight = window.innerHeight;
 	const windowWidth = window.innerWidth;
 
-	const rows = Math.floor(windowHeight / iconSize);
-	const columns = Math.floor(windowWidth / iconSize);
-	const icons = rows * columns;
+	const normalizedWidth = Math.fround((windowWidth - MIN_SCREEN_WIDTH) / (MAX_SCREEN_WIDTH - MIN_SCREEN_WIDTH));
+	const iconSize = MIN_ICON_SIZE + Math.floor(normalizedWidth * (MAX_ICON_SIZE - MIN_ICON_SIZE));
 
-	for (let i = 0; i < icons; i++) {
-		iconsArray.push({
-			id: i,
-			src: backgroundIcons[Math.floor(Math.random() * backgroundIcons.length)],
-			opacity: Math.random(),
+	const noOfRows = Math.floor(windowHeight / iconSize);
+	const noOfColumns = Math.floor(windowWidth / iconSize);
+	const noOfIcons = noOfRows * noOfColumns;
+
+	for (let i = 0; i < noOfIcons; i++) {
+		iconsData.push({
+			iconId: `icon_${i}`,
+			iconSrc: backgroundIcons[Math.floor(Math.random() * backgroundIcons.length)],
 			iconSize,
+			iconRandom: Math.random(),
 		});
 	}
 
-	return iconsArray;
+	return iconsData;
 };
 
 export default function ProjectBackground({ background, hasLoaded }) {
@@ -34,15 +43,16 @@ export default function ProjectBackground({ background, hasLoaded }) {
 			exit='end'
 			className='iconsContainer'
 		>
-			{background.map(({ id, src, opacity, iconSize }) => (
+			{background.map(({ iconId, iconSrc, iconRandom, iconSize }) => (
 				<motion.div
 					variants={iconsAnim}
-					custom={Math.random()}
-					key={id}
+					custom={iconRandom}
+					key={iconId}
+					id={iconId}
 					className='iconWrapper'
 					style={{ width: iconSize, height: iconSize }}
 				>
-					<img alt='icon' src={src} width={52} style={{ opacity: opacity }} />
+					<img alt='icon' src={iconSrc} style={{ width: iconSize / 1.9, opacity: iconRandom }} />
 				</motion.div>
 			))}
 		</motion.div>

@@ -1,11 +1,13 @@
 .iconsContainer {
 	position: absolute;
 	display: flex;
-	flex-flow: wrap;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: stretch;
 	align-items: center;
 	top: 0;
 	bottom: 0;
+	overflow: hidden;
 
 	.iconWrapper {
 		display: flex;
