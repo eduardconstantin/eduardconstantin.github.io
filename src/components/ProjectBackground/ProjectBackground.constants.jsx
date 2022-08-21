@@ -9,4 +9,4 @@ function importAll(r) {
 	return icons;
 }
 
-export const backgroundIcons = importAll(require.context('../../Assets/images/bgIcons', false, /\.(png|jpe?g|svg)$/));
+export const backgroundIcons = importAll(require.context('../../assets/images/bgIcons', false, /\.(png|jpe?g|svg)$/));

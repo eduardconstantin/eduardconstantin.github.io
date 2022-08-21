@@ -1,29 +1,29 @@
-import webLink from '../../Assets/images/links/globe2.svg';
-import dribbbleLink from '../../Assets/images/links/dribbble.svg';
-import gitLink from '../../Assets/images/links/github.svg';
+import webLink from '../../assets/images/links/globe2.svg';
+import dribbbleLink from '../../assets/images/links/dribbble.svg';
+import gitLink from '../../assets/images/links/github.svg';
 
-import portfolio from '../../Assets/images/projects/portfolio.png';
-import livrator from '../../Assets/images/projects/livrator.png';
-import ghicicuvantul from '../../Assets/images/projects/gc.png';
-import cryptocurrency from '../../Assets/images/projects/cc.png';
-import traveldeck from '../../Assets/images/projects/td.png';
-import xboxdash from '../../Assets/images/projects/xd.png';
+import portfolio from '../../assets/images/projects/portfolio.png';
+import livrator from '../../assets/images/projects/livrator.png';
+import ghicicuvantul from '../../assets/images/projects/gc.png';
+import cryptocurrency from '../../assets/images/projects/cc.png';
+import traveldeck from '../../assets/images/projects/td.png';
+import xboxdash from '../../assets/images/projects/xd.png';
 
-import geex from '../../Assets/images/projects/geex.png';
-import tla from '../../Assets/images/projects/tla.png';
-import arbachelor from '../../Assets/images/projects/bachelor.png';
-import arlgtv from '../../Assets/images/projects/arlg.png';
-import ardissertation from '../../Assets/images/projects/dissertation.png';
-import arop7 from '../../Assets/images/projects/arop7.png';
-import castleescape from '../../Assets/images/projects/castleescape.png';
+import geex from '../../assets/images/projects/geex.png';
+import tla from '../../assets/images/projects/tla.png';
+import arbachelor from '../../assets/images/projects/bachelor.png';
+import arlgtv from '../../assets/images/projects/arlg.png';
+import ardissertation from '../../assets/images/projects/dissertation.png';
+import arop7 from '../../assets/images/projects/arop7.png';
+import castleescape from '../../assets/images/projects/castleescape.png';
 
-import smarthome from '../../Assets/images/projects/smarthome.png';
-import godofwar from '../../Assets/images/projects/godofwar.png';
-import itlogo from '../../Assets/images/projects/intimelogo.png';
-import nyoologo from '../../Assets/images/projects/ntoologo.png';
-import btnanim from '../../Assets/images/projects/btnAnim.png';
-import navui from '../../Assets/images/projects/navui.png';
-// import mplogo from '../../Assets/images/projects/mplogo.png';
+import smarthome from '../../assets/images/projects/smarthome.png';
+import godofwar from '../../assets/images/projects/godofwar.png';
+import itlogo from '../../assets/images/projects/intimelogo.png';
+import nyoologo from '../../assets/images/projects/ntoologo.png';
+import btnanim from '../../assets/images/projects/btnAnim.png';
+import navui from '../../assets/images/projects/navui.png';
+// import mplogo from '../../assets/images/projects/mplogo.png';
 
 const web = [
 	{
