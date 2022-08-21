@@ -1,17 +1,17 @@
-import reactIcon from '../../Assets/images/skills/react.png';
-import htmlIcon from '../../Assets/images/skills/html.png';
-import cssIcon from '../../Assets/images/skills/css.png';
-import bootstrapIcon from '../../Assets/images/skills/bootstrap.png';
-import dotnetIcon from '../../Assets/images/skills/dotnet.png';
-import sqlIcon from '../../Assets/images/skills/db.png';
-import jsIcon from '../../Assets/images/skills/js.png';
-import csharpIcon from '../../Assets/images/skills/csharp.png';
+import reactIcon from '../../assets/images/skills/react.png';
+import htmlIcon from '../../assets/images/skills/html.png';
+import cssIcon from '../../assets/images/skills/css.png';
+import bootstrapIcon from '../../assets/images/skills/bootstrap.png';
+import dotnetIcon from '../../assets/images/skills/dotnet.png';
+import sqlIcon from '../../assets/images/skills/db.png';
+import jsIcon from '../../assets/images/skills/js.png';
+import csharpIcon from '../../assets/images/skills/csharp.png';
 
-import unityIcon from '../../Assets/images/skills/unity.png';
-import vuforiaIcon from '../../Assets/images/skills/vuforia.png';
+import unityIcon from '../../assets/images/skills/unity.png';
+import vuforiaIcon from '../../assets/images/skills/vuforia.png';
 
-import psIcon from '../../Assets/images/skills/ps.png';
-import figmaIcon from '../../Assets/images/skills/figma.png';
+import psIcon from '../../assets/images/skills/ps.png';
+import figmaIcon from '../../assets/images/skills/figma.png';
 
 const web = [
 	{ skillName: 'HTML', xp: '8 YRS', icon: htmlIcon },
