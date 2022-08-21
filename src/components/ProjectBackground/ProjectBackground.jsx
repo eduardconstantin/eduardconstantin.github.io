@@ -23,11 +23,12 @@ export const generateBackground = () => {
 	const noOfIcons = noOfRows * noOfColumns;
 
 	for (let i = 0; i < noOfIcons; i++) {
+		const randomIcon = backgroundIcons[Math.floor(Math.random() * backgroundIcons.length)];
 		iconsData.push({
-			iconId: `icon_${i}`,
-			iconSrc: backgroundIcons[Math.floor(Math.random() * backgroundIcons.length)],
+			iconId: `${randomIcon.name}_icon_${i}`,
+			iconSrc: randomIcon.src,
 			iconSize,
-			iconRandom: Math.random(),
+			iconSeed: Math.random(),
 		});
 	}
 
@@ -43,16 +44,16 @@ export default function ProjectBackground({ background, hasLoaded }) {
 			exit='end'
 			className='iconsContainer'
 		>
-			{background.map(({ iconId, iconSrc, iconRandom, iconSize }) => (
+			{background.map(({ iconId, iconSrc, iconSeed, iconSize }) => (
 				<motion.div
 					variants={iconsAnim}
-					custom={iconRandom}
+					custom={iconSeed}
 					key={iconId}
 					id={iconId}
 					className='iconWrapper'
 					style={{ width: iconSize, height: iconSize }}
 				>
-					<img alt='icon' src={iconSrc} style={{ width: iconSize / 1.9, opacity: iconRandom }} />
+					<img alt='icon' src={iconSrc} style={{ width: iconSize / 1.9, opacity: iconSeed }} />
 				</motion.div>
 			))}
 		</motion.div>
