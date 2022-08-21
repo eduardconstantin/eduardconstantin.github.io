@@ -6,29 +6,10 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 
 	span {
-		font-size: 6rem;
+		font-size: clamp(2rem, 3.4vw + 1.3rem, 10rem);
 		user-select: none;
 	}
-	.overlay {
-		width: 100vw;
-		height: 100vh;
-		top: 0;
-		position: fixed;
-		background-color: white;
-		display: flex;
-		&::after {
-			content: '';
-			background-color: rgba(127, 255, 212, 0.562);
-			width: 100%;
-			height: 50px;
-			position: absolute;
-			top: -50px;
-		}
-	}
-}
-
-.word-wrapper {
-	display: inline-block;
 }
