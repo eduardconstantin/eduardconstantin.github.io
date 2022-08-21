@@ -1,12 +1,14 @@
-function importAll(r) {
-	let icons = [];
-	r.keys().forEach((item) => {
-		icons.push({
-			src: r(item),
-			name: item.replace('./', '').replace(/\.(png|jpe?g|svg)$/, ''),
-		});
-	});
-	return icons;
-}
+import { importAllImages } from '../../helpers';
 
-export const backgroundIcons = importAll(require.context('../../assets/images/bgIcons', false, /\.(png|jpe?g|svg)$/));
+export const MIN_SCREEN_WIDTH = 320;
+export const MAX_SCREEN_WIDTH = 4096;
+
+export const MIN_ICON_SIZE = 60;
+export const MAX_ICON_SIZE = 150;
+
+export const WINDOW_HEIGHT = window.innerHeight;
+export const WINDOW_WIDTH = window.innerWidth;
+
+export const backgroundIcons = importAllImages(
+	require.context('../../assets/images/bgIcons', false, /\.(png|jpe?g|svg)$/)
+);
