@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { hot } from 'react-hot-loader/root';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 import { Background, generateBackground, Menu, Welcome, About, Skills, Projects } from './Components';
 import { pageTransitionAnim } from './App.anim';
@@ -16,7 +17,7 @@ const switchPage = (pageNo) => {
 	}
 };
 
-export default function App() {
+const App = () => {
 	const [hasLoaded, setHasLoaded] = useState(false);
 	const [page, setPage] = useState(0);
 	const [bg, setBg] = useState([]);
@@ -49,4 +50,6 @@ export default function App() {
 			</AnimateSharedLayout>
 		</div>
 	);
-}
+};
+
+export default hot(App);
