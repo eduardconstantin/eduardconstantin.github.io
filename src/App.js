@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { hot } from 'react-hot-loader/root';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
-import { Background, generateBackground, Menu, Welcome, About, Skills, Projects } from './components';
+import { Background, generateBackgroundIcons, Menu, Welcome, About, Skills, Projects } from './components';
 import { pageTransitionAnim } from './App.anim';
 
 const switchPage = (pageNo) => {
@@ -23,7 +23,7 @@ const App = () => {
 	const [bg, setBg] = useState([]);
 
 	useEffect(() => {
-		setBg(generateBackground());
+		setBg(generateBackgroundIcons());
 	}, []);
 
 	return (
