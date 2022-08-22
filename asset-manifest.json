@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c21d5a9c.css",
+    "main.css": "/static/css/main.20cc2087.css",
     "main.js": "/static/js/main.f1b373d1.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/Gradient_7.jpg": "/static/media/Gradient_7.f7df5fd846004ce178ec.jpg",
@@ -27,11 +27,11 @@
     "static/media/dribbble.svg": "/static/media/dribbble.2e5ef9143fc6c7e340519d903c307308.svg",
     "index.html": "/index.html",
     "static/media/github.svg": "/static/media/github.dd6f52ca42dd85742c860d6b0080dfc1.svg",
-    "main.c21d5a9c.css.map": "/static/css/main.c21d5a9c.css.map",
+    "main.20cc2087.css.map": "/static/css/main.20cc2087.css.map",
     "main.f1b373d1.js.map": "/static/js/main.f1b373d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.c21d5a9c.css",
+    "static/css/main.20cc2087.css",
     "static/js/main.f1b373d1.js"
   ]
 }
