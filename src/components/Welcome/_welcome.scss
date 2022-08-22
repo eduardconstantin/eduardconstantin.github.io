@@ -1,7 +1,8 @@
 .loader {
 	font-family: 'Assistant', sans-serif;
 	font-weight: 700;
-	min-height: 100dvh;
+	height: 100vh;
+	max-height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
