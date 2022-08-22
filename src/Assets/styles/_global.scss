@@ -4,6 +4,12 @@
 	font-family: Stay Dreaming;
 	src: url('../fonts/Stay\ Dreaming\ Regular.ttf');
 }
+html,
+body,
+#root,
+.App {
+	height: 100%;
+}
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
