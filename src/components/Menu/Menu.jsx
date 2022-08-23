@@ -1,27 +1,8 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
-
-import { menuContentAnim, menuIconElemAnim, socialAnim, menuIcon, menuAnim } from './Menu.anim';
-import socialLinks from './Menu.constants';
+import { menuContentAnim, menuIconElemAnim, menuIcon, menuAnim } from './Menu.anim';
 import { Location } from './Location/Location';
-
-const SocialIcons = () => {
-	return (
-		<div className='socialContainer'>
-			<ul>
-				{socialLinks.map(({ name, link }) => {
-					return (
-						<motion.li key={name} variants={socialAnim} whileHover='hover'>
-							<a href={link} target='_blank' rel='noreferrer'>
-								{name}
-							</a>
-						</motion.li>
-					);
-				})}
-			</ul>
-		</div>
-	);
-};
+import { SocialIcons } from './SocialIcons/SocialIcons';
 
 export default function Menu({ pageNo, selectPage }) {
 	const [isOpen, setIsOpen] = useState(false);
