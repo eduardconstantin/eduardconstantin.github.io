@@ -3,6 +3,25 @@ import { motion, useMotionValue } from 'framer-motion';
 
 import { menuContentAnim, menuIconElemAnim, socialAnim, menuIcon, menuAnim } from './Menu.anim';
 import socialLinks from './Menu.constants';
+import { Location } from './Location/Location';
+
+const SocialIcons = () => {
+	return (
+		<div className='socialContainer'>
+			<ul>
+				{socialLinks.map(({ name, link }) => {
+					return (
+						<motion.li key={name} variants={socialAnim} whileHover='hover'>
+							<a href={link} target='_blank' rel='noreferrer'>
+								{name}
+							</a>
+						</motion.li>
+					);
+				})}
+			</ul>
+		</div>
+	);
+};
 
 export default function Menu({ pageNo, selectPage }) {
 	const [isOpen, setIsOpen] = useState(false);
@@ -35,11 +54,7 @@ export default function Menu({ pageNo, selectPage }) {
 
 	return (
 		<motion.section className='menuSection' variants={menuAnim} initial='init' animate='anim'>
-			<div className='locationContainer'>
-				<p>
-					Located in <span>Romania</span>
-				</p>
-			</div>
+			<Location />
 
 			<motion.div className='menuContainer'>
 				<motion.div
@@ -101,19 +116,7 @@ export default function Menu({ pageNo, selectPage }) {
 				</motion.div>
 			</motion.div>
 
-			<div className='socialContainer'>
-				<ul>
-					{socialLinks.map((el) => {
-						return (
-							<motion.li key={el.name} variants={socialAnim} whileHover='hover'>
-								<a href={el.link} target='_blank' rel='noreferrer'>
-									{el.name}
-								</a>
-							</motion.li>
-						);
-					})}
-				</ul>
-			</div>
+			<SocialIcons />
 		</motion.section>
 	);
 }
