@@ -7,21 +7,25 @@
 	flex-direction: row;
 	align-items: center;
 	z-index: 9;
+	height: 90px;
 
 	.menuContainer {
 		position: relative;
-		bottom: 20px;
+		bottom: 41px;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
 		perspective: 500px;
+		width: 35px;
+		height: 35px;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: nowrap;
+		flex-direction: column;
 
-		.menuIcon {
+		.menuButton {
 			width: 40px;
 			height: 40px;
-			position: relative;
-			left: -1px;
-			top: 10px;
+			position: absolute;
 			z-index: 2;
 
 			.top,
@@ -62,106 +66,116 @@
 			}
 		}
 
-		.selectedBack {
-			width: 100px;
-			height: 40px;
-			background-color: #6fc926bd;
-			position: absolute;
-			bottom: 1px;
-			transition: all 0.45s;
-		}
+		.menuWrapper {
+			position: relative;
+			top: 42px;
 
-		.selectedFront {
-			width: 100px;
-			height: 3px;
-			background-color: #6ec926;
-			position: absolute;
-			bottom: 1px;
-			transition: all 0.4s;
-		}
-
-		.icon {
-			width: 50px;
-			height: 50px;
-			background-color: rgba(111, 201, 38, 0.952);
-			position: absolute;
-			top: 1px;
-			margin: auto;
-			display: block;
-			z-index: -1;
-		}
-
-		.menu {
-			background-color: rgba(200, 242, 155, 0.05);
-			backdrop-filter: blur(20px);
-
-			height: 70px;
-			width: 600px;
-			-webkit-mask-repeat: no-repeat;
-			mask-repeat: no-repeat;
-			-webkit-mask-size: 100%;
-			mask-size: 100%;
-			-webkit-mask-position: center;
-			mask-position: center;
-			-webkit-mask-image: url(../../Assets/images/mask2.png);
-			mask-image: url(../../Assets/images/mask2.png);
-
-			&:after {
-				content: '';
-				width: 100%;
-				height: 100%;
+			.selectedBack {
+				width: 100px;
+				height: 40px;
+				background-color: #6fc926bd;
 				position: absolute;
-				background-image: url(../../Assets/images/dots.png);
-				background-size: 65px;
-				left: 0;
-				opacity: 0.4;
+				bottom: 1px;
+				filter: blur(25px);
 			}
 
-			&:before {
-				content: '';
-				width: 100%;
-				height: 100%;
+			.selectedFront {
+				width: 100px;
+				height: 3px;
+				background-color: #6ec926;
 				position: absolute;
-				left: 0;
-				background-color: rgba(200, 242, 155, 0.2);
-				backdrop-filter: blur(25px);
+				bottom: 1px;
+			}
+
+			.icon {
+				width: 50px;
+				height: 50px;
+				background-color: rgba(111, 201, 38, 0.952);
+				position: absolute;
+				top: 1px;
+				margin: auto;
+				display: block;
+				z-index: -1;
+			}
+
+			.menu {
+				background-color: rgba(200, 242, 155, 0.05);
+				backdrop-filter: blur(20px);
+
+				height: 70px;
+				width: 600px;
 				-webkit-mask-repeat: no-repeat;
 				mask-repeat: no-repeat;
 				-webkit-mask-size: 100%;
 				mask-size: 100%;
 				-webkit-mask-position: center;
 				mask-position: center;
-				-webkit-mask-image: url(../../Assets/images/mask.png);
-				mask-image: url(../../Assets/images/mask.png);
-			}
+				-webkit-mask-image: url(../../Assets/images/mask2.png);
+				mask-image: url(../../Assets/images/mask2.png);
 
-			.menuList {
-				list-style-type: none;
-				display: flex;
-				flex-direction: row;
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				padding: 0 2rem;
-				margin: 0;
-				align-items: center;
-				z-index: 2;
-
-				li {
+				&:after {
+					content: '';
 					width: 100%;
+					height: 100%;
+					position: absolute;
+					background-image: url(../../Assets/images/dots.png);
+					background-size: 65px;
+					left: 0;
+					opacity: 0.4;
+				}
 
-					p {
-						text-decoration: none;
-						color: $text-color;
-						font-family: $main-font;
-						font-weight: 600;
-						font-size: 18px;
-						transition: color 0.3s;
-						transition-delay: 0.2s;
-						margin: 0;
+				&:before {
+					content: '';
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					background-color: rgba(200, 242, 155, 0.2);
+					backdrop-filter: blur(25px);
+					-webkit-mask-repeat: no-repeat;
+					mask-repeat: no-repeat;
+					-webkit-mask-size: 100%;
+					mask-size: 100%;
+					-webkit-mask-position: center;
+					mask-position: center;
+					-webkit-mask-image: url(../../Assets/images/mask.png);
+					mask-image: url(../../Assets/images/mask.png);
+				}
+
+				.menuList {
+					list-style-type: none;
+					display: flex;
+					flex-direction: row;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					padding: 0 2rem;
+					margin: 0;
+					align-items: center;
+					z-index: 2;
+
+					li {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						align-content: center;
+						justify-content: center;
 						cursor: pointer;
 
-						&:hover {
+						a {
+							text-decoration: none;
+							color: $text-color;
+							font-family: $main-font;
+							font-weight: 600;
+							font-size: 18px;
+							transition: color 0.3s;
+							transition-delay: 0.2s;
+							margin: 0;
+							z-index: 1;
+						}
+						&:hover a {
 							color: rgb(193, 211, 197);
 						}
 					}

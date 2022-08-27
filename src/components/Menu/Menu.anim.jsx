@@ -1,4 +1,4 @@
-const menuAnim = {
+export const menuAnim = {
 	init: {
 		opacity: 0,
 		y: 50,
@@ -12,7 +12,7 @@ const menuAnim = {
 	},
 };
 
-const menuContentAnim = {
+export const menuWrapperAnim = {
 	open: {
 		scale: 1,
 		rotateY: 0,
@@ -23,7 +23,7 @@ const menuContentAnim = {
 			stiffness: 120,
 		},
 	},
-	closed: {
+	close: {
 		scale: 0,
 		rotateY: -80,
 		translateZ: -350,
@@ -35,18 +35,18 @@ const menuContentAnim = {
 	},
 };
 
-const menuIconElemAnim = {
+export const buttonIconAnim = {
 	open: (i) => ({
 		scale: 1,
 		rotate: 45,
 	}),
-	closed: {
+	close: {
 		scale: 1,
 		rotate: 45,
 	},
 };
 
-const menuIcon = {
+export const menuButtonAnim = {
 	open: {
 		scale: 0.85,
 		transition: {
@@ -62,5 +62,3 @@ const menuIcon = {
 		},
 	},
 };
-
-export { menuAnim, menuContentAnim, menuIconElemAnim, menuIcon };
