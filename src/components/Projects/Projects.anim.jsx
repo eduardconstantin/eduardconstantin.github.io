@@ -1,4 +1,4 @@
-const projectsAnim = {
+export const projectsAnim = {
 	init: {
 		opacity: 0,
 	},
@@ -17,7 +17,7 @@ const projectsAnim = {
 	},
 };
 
-const titleAnim = {
+export const titleAnim = {
 	hidden: {
 		height: 0,
 		padding: 0,
@@ -41,7 +41,7 @@ const titleAnim = {
 	},
 };
 
-const linksContainerAnim = {
+export const linksContainerAnim = {
 	hidden: {
 		opacity: 0,
 		transition: {
@@ -59,7 +59,7 @@ const linksContainerAnim = {
 	},
 };
 
-const linksAnim = {
+export const linksAnim = {
 	hidden: {
 		opacity: 0,
 		y: 200,
@@ -79,7 +79,7 @@ const linksAnim = {
 	},
 };
 
-const sliderAnim = {
+export const sliderAnim = {
 	hidden: {
 		borderColor: '#fff',
 		transition: {
@@ -95,7 +95,7 @@ const sliderAnim = {
 	},
 };
 
-const projCatAnim = {
+export const projCatAnim = {
 	init: {
 		width: '100%',
 		opacity: 0,
@@ -106,5 +106,3 @@ const projCatAnim = {
 		y: 0,
 	},
 };
-
-export { projectsAnim, titleAnim, sliderAnim, projCatAnim, linksContainerAnim, linksAnim };

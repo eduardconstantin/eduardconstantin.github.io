@@ -39,7 +39,7 @@ export default function Skills() {
 	}, []);
 
 	return (
-		<motion.section className='skills' variants={skillsAnim} initial='init' animate='anim'>
+		<motion.section className='skills' variants={skillsAnim} initial='init' animate='anim' exit='end'>
 			<motion.div className='leftSide' variants={leftAnim}>
 				{skillCat.map((skill, i) => {
 					return (
