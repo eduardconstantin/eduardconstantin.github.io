@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Location } from './Location/Location';
 import { SocialIcons } from './SocialIcons/SocialIcons';
+import { MenuLink } from './MenuLink/MenuLink';
 import { menuWrapperAnim, buttonIconAnim, menuButtonAnim, menuAnim } from './Menu.anim';
+
+const MENU_LINKS = [
+	{ name: 'ABOUT', link: '/' },
+	{ name: 'SKILLS', link: '/skills' },
+	{ name: 'PROJECTS', link: '/projects' },
+];
 
 export default function Menu({ currentPage, selectPage }) {
 	const [hoverPage, setHoverPage] = useState(currentPage);
@@ -22,48 +28,20 @@ export default function Menu({ currentPage, selectPage }) {
 				<motion.div variants={menuWrapperAnim} className='menuWrapper'>
 					<div className='menu'>
 						<ul className='menuList'>
-							<motion.li
-								onTap={() => selectPage(0)}
-								onHoverStart={() => setHoverPage(0)}
-								onHoverEnd={() => setHoverPage(currentPage)}
-								key={0}
-							>
-								<NavLink to='/'>ABOUT ME</NavLink>
-								{hoverPage === 0 && (
-									<>
-										<motion.div className='selectedBack' layoutId='ss'></motion.div>
-										<motion.div className='selectedFront' layoutId='underline'></motion.div>
-									</>
-								)}
-							</motion.li>
-							<motion.li
-								onTap={() => selectPage(1)}
-								onHoverStart={() => setHoverPage(1)}
-								onHoverEnd={() => setHoverPage(currentPage)}
-								key={1}
-							>
-								<NavLink to='/skills'>SKILLS</NavLink>
-								{hoverPage === 1 && (
-									<>
-										<motion.div className='selectedBack' layoutId='ss'></motion.div>
-										<motion.div className='selectedFront' layoutId='underline'></motion.div>
-									</>
-								)}
-							</motion.li>
-							<motion.li
-								onTap={() => selectPage(2)}
-								onHoverStart={() => setHoverPage(2)}
-								onHoverEnd={() => setHoverPage(currentPage)}
-								key={2}
-							>
-								<NavLink to='/projects'>PROJECTS</NavLink>
-								{hoverPage === 2 && (
-									<>
-										<motion.div className='selectedBack' layoutId='ss'></motion.div>
-										<motion.div className='selectedFront' layoutId='underline'></motion.div>
-									</>
-								)}
-							</motion.li>
+							{MENU_LINKS.map(({ name, link }, i) => {
+								return (
+									<MenuLink
+										key={i}
+										index={i}
+										name={name}
+										navLink={link}
+										hoverPageNo={hoverPage}
+										onTap={() => selectPage(i)}
+										onHoverStart={() => setHoverPage(i)}
+										onHoverEnd={() => setHoverPage(currentPage)}
+									/>
+								);
+							})}
 						</ul>
 					</div>
 				</motion.div>
