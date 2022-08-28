@@ -3,13 +3,8 @@ import { motion } from 'framer-motion';
 import { Location } from './Location/Location';
 import { SocialIcons } from './SocialIcons/SocialIcons';
 import { MenuLink } from './MenuLink/MenuLink';
+import { MENU_LINKS } from './Menu.constants';
 import { menuWrapperAnim, buttonIconAnim, menuButtonAnim, menuAnim } from './Menu.anim';
-
-const MENU_LINKS = [
-	{ name: 'ABOUT', link: '/' },
-	{ name: 'SKILLS', link: '/skills' },
-	{ name: 'PROJECTS', link: '/projects' },
-];
 
 export default function Menu({ currentPage, selectPage }) {
 	const [hoverPage, setHoverPage] = useState(currentPage);
