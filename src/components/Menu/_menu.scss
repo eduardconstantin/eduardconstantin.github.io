@@ -7,25 +7,20 @@
 	flex-direction: row;
 	align-items: center;
 	z-index: 9;
-	height: 90px;
 
 	.menuContainer {
 		position: relative;
-		bottom: 41px;
+		bottom: 20px;
 		display: flex;
 		perspective: 500px;
-		width: 35px;
-		height: 35px;
-		align-items: center;
-		justify-content: center;
-		align-content: center;
-		flex-wrap: nowrap;
 		flex-direction: column;
+		align-items: center;
 
 		.menuButton {
 			width: 40px;
 			height: 40px;
-			position: absolute;
+			position: relative;
+			top: 10px;
 			z-index: 2;
 
 			.top,
@@ -68,7 +63,6 @@
 
 		.menuWrapper {
 			position: relative;
-			top: 42px;
 
 			.selectedBack {
 				width: 100px;
