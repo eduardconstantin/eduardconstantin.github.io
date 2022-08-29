@@ -3,13 +3,21 @@
 	display: flex;
 	color: $text-color;
 	font-family: $main-font;
-	font-size: 18px;
+	font-size: clamp(0.5rem, 0.6vw + 0.4rem, 1.125rem);
 
 	p {
 		position: relative;
 		margin: 0;
-		margin-left: 10%;
+		margin-left: 4vw;
+		gap: 4px;
+		padding-left: 30px;
 		user-select: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
 
 		&::after {
 			content: '';
@@ -19,8 +27,7 @@
 			background-image: url(../../../assets/images/icons/loc.png);
 			background-repeat: no-repeat;
 			background-position: center;
-			left: -30px;
-			top: -3px;
+			left: 0px;
 		}
 
 		&:hover span::after {
@@ -57,14 +64,14 @@
 				content: '';
 				opacity: 0;
 				position: absolute;
-				width: 100px;
+				width: 100%;
 				height: 65px;
 				background-image: url(../../../assets/images/r-map.png);
 				background-repeat: no-repeat;
 				background-position: center;
 				background-size: contain;
-				left: -8px;
-				top: -21.5px;
+				left: 0;
+				top: -22px;
 				z-index: -1;
 			}
 		}

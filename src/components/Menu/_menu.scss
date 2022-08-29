@@ -15,12 +15,13 @@
 		perspective: 500px;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 
 		.menuButton {
 			width: 40px;
 			height: 40px;
 			position: relative;
-			top: 10px;
+			top: 0.4vw;
 			z-index: 2;
 
 			.top,
@@ -63,23 +64,7 @@
 
 		.menuWrapper {
 			position: relative;
-
-			.selectedBack {
-				width: 100px;
-				height: 40px;
-				background-color: #6fc926bd;
-				position: absolute;
-				bottom: 1px;
-				filter: blur(25px);
-			}
-
-			.selectedFront {
-				width: 100px;
-				height: 3px;
-				background-color: #6ec926;
-				position: absolute;
-				bottom: 1px;
-			}
+			width: 100%;
 
 			.icon {
 				width: 50px;
@@ -95,9 +80,8 @@
 			.menu {
 				background-color: rgba(200, 242, 155, 0.05);
 				backdrop-filter: blur(20px);
-
-				height: 70px;
-				width: 600px;
+				height: 3.8vw;
+				width: 100%;
 				-webkit-mask-repeat: no-repeat;
 				mask-repeat: no-repeat;
 				-webkit-mask-size: 100%;
@@ -158,12 +142,29 @@
 						justify-content: center;
 						cursor: pointer;
 
+						.selectedBack {
+							width: 20%;
+							height: 40px;
+							background-color: #6fc926bd;
+							position: absolute;
+							bottom: 1px;
+							filter: blur(25px);
+						}
+
+						.selectedFront {
+							width: 20%;
+							height: 2px;
+							background-color: #6ec926;
+							position: absolute;
+							bottom: 1px;
+						}
+
 						a {
 							text-decoration: none;
 							color: $text-color;
 							font-family: $main-font;
 							font-weight: 600;
-							font-size: 18px;
+							font-size: clamp(0.5rem, 0.6vw + 0.4rem, 1.125rem);
 							transition: color 0.3s;
 							transition-delay: 0.2s;
 							margin: 0;

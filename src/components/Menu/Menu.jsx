@@ -14,14 +14,14 @@ export default function Menu({ currentPage, selectPage }) {
 		<motion.section className='menuSection' variants={menuAnim} initial='init' animate='anim'>
 			<Location />
 
-			<motion.div className='menuContainer'>
+			<div className='menuContainer'>
 				<motion.div
 					className='menuButton'
 					variants={menuButtonAnim}
 					initial='close'
 					animate={isMenuOpen ? 'open' : 'close'}
-					onHoverStart={() => setIsMenuOpen(true)}
-					onHoverEnd={() => setIsMenuOpen(false)}
+					onMouseEnter={() => setIsMenuOpen(true)}
+					onMouseLeave={() => setIsMenuOpen(false)}
 				>
 					<motion.div className='top' variants={buttonIconAnim} custom={1}></motion.div>
 					<motion.div className='left' variants={buttonIconAnim} custom={2}></motion.div>
@@ -33,8 +33,8 @@ export default function Menu({ currentPage, selectPage }) {
 					className='menuWrapper'
 					initial='close'
 					animate={isMenuOpen ? 'open' : 'close'}
-					onHoverStart={() => setIsMenuOpen(true)}
-					onHoverEnd={() => setIsMenuOpen(false)}
+					onMouseEnter={() => setIsMenuOpen(true)}
+					onMouseLeave={() => setIsMenuOpen(false)}
 				>
 					<div className='menu'>
 						<ul className='menuList'>
@@ -55,7 +55,7 @@ export default function Menu({ currentPage, selectPage }) {
 						</ul>
 					</div>
 				</motion.div>
-			</motion.div>
+			</div>
 
 			<SocialIcons />
 		</motion.section>
