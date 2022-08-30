@@ -19,14 +19,15 @@ export default function Menu({ currentPage, selectPage }) {
 					className='menuButton'
 					variants={menuButtonAnim}
 					initial='close'
-					animate={isMenuOpen ? 'open' : 'close'}
+					animate='close'
+					whileHover='open'
 					onMouseEnter={() => setIsMenuOpen(true)}
 					onMouseLeave={() => setIsMenuOpen(false)}
 				>
-					<motion.div className='top' variants={buttonIconAnim} custom={1}></motion.div>
-					<motion.div className='left' variants={buttonIconAnim} custom={2}></motion.div>
-					<motion.div className='right' variants={buttonIconAnim} custom={3}></motion.div>
-					<motion.div className='bottom' variants={buttonIconAnim} custom={4}></motion.div>
+					<motion.div className='top' variants={buttonIconAnim}></motion.div>
+					<motion.div className='left' variants={buttonIconAnim}></motion.div>
+					<motion.div className='right' variants={buttonIconAnim}></motion.div>
+					<motion.div className='bottom' variants={buttonIconAnim}></motion.div>
 				</motion.div>
 				<motion.div
 					variants={menuWrapperAnim}

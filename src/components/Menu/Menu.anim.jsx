@@ -19,8 +19,7 @@ export const menuWrapperAnim = {
 		translateZ: 0,
 		transition: {
 			type: 'spring',
-			mass: 0.5,
-			stiffness: 120,
+			bounce: 0.36,
 		},
 	},
 	close: {
@@ -28,7 +27,7 @@ export const menuWrapperAnim = {
 		rotateY: -80,
 		translateZ: -350,
 		transition: {
-			rotateY: { delay: 0.25, type: 'spring', mass: 0.5 },
+			rotateY: { delay: 0.3, type: 'spring', mass: 0.2 },
 			duration: 0.3,
 			delay: 0.1,
 		},
@@ -36,29 +35,36 @@ export const menuWrapperAnim = {
 };
 
 export const buttonIconAnim = {
-	open: (i) => ({
-		scale: 1,
+	open: {
+		scale: [1, 0.5, 0.9],
 		rotate: 45,
-	}),
+		transition: {
+			duration: 0.5,
+		},
+	},
 	close: {
-		scale: 1,
+		scale: [0.9, 0.5, 1],
 		rotate: 45,
+		transition: {
+			duration: 0.5,
+		},
 	},
 };
 
 export const menuButtonAnim = {
 	open: {
-		scale: 0.85,
+		scale: 0.88,
 		transition: {
 			type: 'spring',
-			stiffness: 350,
+			staggerChildren: 0.1,
 		},
 	},
-	closed: {
+	close: {
 		scale: 1,
 		transition: {
 			type: 'spring',
-			stiffness: 350,
+			staggerDirection: -1,
+			staggerChildren: 0.1,
 		},
 	},
 };
