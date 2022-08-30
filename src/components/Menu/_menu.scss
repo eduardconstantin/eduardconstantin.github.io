@@ -179,3 +179,28 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.menuSection {
+		flex-direction: column;
+		gap: 0.8rem;
+
+		.menuContainer {
+			bottom: 0px;
+			.menuWrapper {
+				width: 85vw;
+				.menu {
+					height: 9.5vw;
+
+					.menuList {
+						li {
+							a {
+								font-size: clamp(0.5rem, 2.1vw + 0.1rem, 1.1rem);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

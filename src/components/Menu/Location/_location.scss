@@ -77,3 +77,20 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.locationContainer {
+		order: 3;
+		justify-content: center;
+		padding-bottom: 1rem;
+
+		p {
+			margin-left: 0;
+			span {
+				&:after {
+					top: -25px;
+				}
+			}
+		}
+	}
+}

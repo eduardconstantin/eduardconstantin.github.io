@@ -53,3 +53,15 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.socialContainer {
+		order: 2;
+
+		ul {
+			display: flex;
+			justify-content: center;
+			margin: 0;
+		}
+	}
+}
