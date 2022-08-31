@@ -39,14 +39,20 @@ export const buttonIconAnim = {
 		scale: [1, 0.5, 0.9],
 		rotate: 45,
 		transition: {
-			duration: 0.5,
+			duration: 0.45,
+			ease: 'easeInOut',
+			repeatDelay: 3,
+			repeat: Infinity,
 		},
 	},
 	close: {
 		scale: [0.9, 0.5, 1],
 		rotate: 45,
 		transition: {
-			duration: 0.5,
+			ease: 'easeInOut',
+			duration: 0.45,
+			repeatDelay: 3,
+			repeat: Infinity,
 		},
 	},
 };
@@ -56,7 +62,7 @@ export const menuButtonAnim = {
 		scale: 0.88,
 		transition: {
 			type: 'spring',
-			staggerChildren: 0.1,
+			staggerChildren: 0.12,
 		},
 	},
 	close: {
@@ -64,7 +70,7 @@ export const menuButtonAnim = {
 		transition: {
 			type: 'spring',
 			staggerDirection: -1,
-			staggerChildren: 0.1,
+			staggerChildren: 0.12,
 		},
 	},
 };
