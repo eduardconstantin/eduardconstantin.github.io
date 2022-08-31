@@ -5,7 +5,7 @@
 	font-family: $main-font;
 	font-size: clamp(0.5rem, 0.6vw + 0.4rem, 1.125rem);
 
-	p {
+	.location {
 		position: relative;
 		margin: 0;
 		margin-left: 4vw;
@@ -35,7 +35,8 @@
 			font-weight: 600;
 			position: relative;
 		}
-		span.map {
+
+		.locationMap {
 			position: absolute;
 			width: 40%;
 			height: 65px;
@@ -56,12 +57,10 @@
 		justify-content: center;
 		padding-bottom: 1rem;
 
-		p {
+		.location {
 			margin-left: 0;
-			span {
-				&:after {
-					top: -25px;
-				}
+			.locationMap {
+				top: -25px;
 			}
 		}
 	}
