@@ -1,4 +1,4 @@
-const skillsAnim = {
+export const skillsAnim = {
 	init: {
 		opacity: 0,
 	},
@@ -8,7 +8,7 @@ const skillsAnim = {
 			duration: 0.5,
 		},
 	},
-	exit: {
+	end: {
 		opacity: 0,
 		transition: {
 			duration: 0.5,
@@ -16,7 +16,7 @@ const skillsAnim = {
 	},
 };
 
-const leftAnim = {
+export const leftAnim = {
 	init: {
 		rotateY: 90,
 		opacity: 0,
@@ -30,7 +30,7 @@ const leftAnim = {
 	},
 };
 
-const rightAnim = {
+export const rightAnim = {
 	init: {
 		x: 90,
 		opacity: 0,
@@ -44,7 +44,7 @@ const rightAnim = {
 	},
 };
 
-const skillCatAnim = {
+export const skillCatAnim = {
 	hidden: {
 		opacity: 0,
 		letterSpacing: '-30px',
@@ -69,5 +69,3 @@ const skillCatAnim = {
 		},
 	},
 };
-
-export { skillsAnim, leftAnim, rightAnim, skillCatAnim };

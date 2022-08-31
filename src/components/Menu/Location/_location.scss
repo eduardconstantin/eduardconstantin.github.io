@@ -1,0 +1,67 @@
+.locationContainer {
+	width: 100%;
+	display: flex;
+	color: $text-color;
+	font-family: $main-font;
+	font-size: clamp(0.5rem, 0.6vw + 0.4rem, 1.125rem);
+
+	.location {
+		position: relative;
+		margin: 0;
+		margin-left: 4vw;
+		gap: 4px;
+		padding-left: 30px;
+		user-select: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-image: url(../../../assets/images/icons/loc.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			left: 0px;
+		}
+
+		span {
+			color: #afeb70;
+			font-weight: 600;
+			position: relative;
+		}
+
+		.locationMap {
+			position: absolute;
+			width: 40%;
+			height: 65px;
+			background-image: url(../../../assets/images/r-map.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			right: 0;
+			top: -22px;
+			z-index: -1;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.locationContainer {
+		order: 3;
+		justify-content: center;
+		padding-bottom: 1rem;
+
+		.location {
+			margin-left: 0;
+			.locationMap {
+				top: -25px;
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-const menuAnim = {
+export const menuAnim = {
 	init: {
 		opacity: 0,
 		y: 50,
@@ -12,71 +12,65 @@ const menuAnim = {
 	},
 };
 
-const menuContentAnim = {
+export const menuWrapperAnim = {
 	open: {
 		scale: 1,
 		rotateY: 0,
 		translateZ: 0,
 		transition: {
 			type: 'spring',
-			mass: 0.5,
-			stiffness: 120,
+			bounce: 0.36,
 		},
 	},
-	closed: {
+	close: {
 		scale: 0,
 		rotateY: -80,
 		translateZ: -350,
 		transition: {
-			rotateY: { delay: 0.25, type: 'spring', mass: 0.5 },
+			rotateY: { delay: 0.3, type: 'spring', mass: 0.2 },
 			duration: 0.3,
 			delay: 0.1,
 		},
 	},
 };
 
-const menuIconElemAnim = {
-	open: (i) => ({
-		scale: 1,
-		rotate: 45,
-	}),
-	closed: {
-		scale: 1,
-		rotate: 45,
-	},
-};
-
-const menuIcon = {
+export const buttonIconAnim = {
 	open: {
-		scale: 0.85,
+		scale: [1, 0.5, 0.9],
+		rotate: 45,
 		transition: {
-			type: 'spring',
-			stiffness: 350,
+			duration: 0.45,
+			ease: 'easeInOut',
+			repeatDelay: 3,
+			repeat: Infinity,
 		},
 	},
-	closed: {
-		scale: 1,
+	close: {
+		scale: [0.9, 0.5, 1],
+		rotate: 45,
 		transition: {
-			type: 'spring',
-			stiffness: 350,
+			ease: 'easeInOut',
+			duration: 0.45,
+			repeatDelay: 3,
+			repeat: Infinity,
 		},
 	},
 };
 
-const socialAnim = {
-	hover: {
-		scale: 0.9,
-		backgroundColor: 'rgba(111, 201, 38, 1)',
+export const menuButtonAnim = {
+	open: {
+		scale: 0.88,
 		transition: {
-			backgroundColor: { duration: 0.15 },
 			type: 'spring',
-			stiffness: 350,
+			staggerChildren: 0.12,
 		},
 	},
-	leave: {
+	close: {
 		scale: 1,
-		backgroundColor: 'rgba(111, 201, 38, 0)',
+		transition: {
+			type: 'spring',
+			staggerDirection: -1,
+			staggerChildren: 0.12,
+		},
 	},
 };
-
-export { menuAnim, menuContentAnim, menuIconElemAnim, menuIcon, socialAnim };

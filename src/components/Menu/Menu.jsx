@@ -1,119 +1,63 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { motion, useMotionValue } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Location } from './Location/Location';
+import { SocialIcons } from './SocialIcons/SocialIcons';
+import { MenuLink } from './MenuLink/MenuLink';
+import { MENU_LINKS } from './Menu.constants';
+import { menuWrapperAnim, buttonIconAnim, menuButtonAnim, menuAnim } from './Menu.anim';
 
-import { menuContentAnim, menuIconElemAnim, socialAnim, menuIcon, menuAnim } from './Menu.anim';
-import socialLinks from './Menu.constants';
-
-export default function Menu({ pageNo, selectPage }) {
-	const [isOpen, setIsOpen] = useState(false);
-
-	const x = useMotionValue(0);
-	const aboutRef = useRef();
-	const skillRef = useRef();
-	const projRef = useRef();
-
-	const menuHover = useCallback(
-		(target) => {
-			x.set(target.offsetLeft + (target.offsetWidth - 100) / 2);
-		},
-		[x]
-	);
-
-	const activeMenu = useCallback(() => {
-		if (pageNo === 0) {
-			menuHover(aboutRef.current);
-		} else if (pageNo === 1) {
-			menuHover(skillRef.current);
-		} else {
-			menuHover(projRef.current);
-		}
-	}, [pageNo, menuHover]);
-
-	useEffect(() => {
-		activeMenu();
-	}, [activeMenu]);
+export default function Menu({ currentPage, selectPage }) {
+	const [hoverPage, setHoverPage] = useState(currentPage);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
 		<motion.section className='menuSection' variants={menuAnim} initial='init' animate='anim'>
-			<div className='locationContainer'>
-				<p>
-					Located in <span>Romania</span>
-				</p>
-			</div>
+			<Location />
 
-			<motion.div className='menuContainer'>
+			<div className='menuContainer'>
 				<motion.div
-					className='menuIcon'
-					onMouseEnter={() => setIsOpen(true)}
-					onMouseLeave={() => setIsOpen(false)}
-					variants={menuIcon}
-					initial='closed'
-					animate={isOpen ? 'open' : 'closed'}
+					className='menuButton'
+					variants={menuButtonAnim}
+					initial='close'
+					animate={isMenuOpen ? 'open' : 'close'}
+					onMouseEnter={() => setIsMenuOpen(true)}
+					onMouseLeave={() => setIsMenuOpen(false)}
 				>
-					<motion.div className='top' variants={menuIconElemAnim} custom={1}></motion.div>
-					<motion.div className='left' variants={menuIconElemAnim} custom={2}></motion.div>
-					<motion.div className='right' variants={menuIconElemAnim} custom={3}></motion.div>
-					<motion.div className='bottom' variants={menuIconElemAnim} custom={4}></motion.div>
+					<motion.div className='top' variants={buttonIconAnim}></motion.div>
+					<motion.div className='left' variants={buttonIconAnim}></motion.div>
+					<motion.div className='right' variants={buttonIconAnim}></motion.div>
+					<motion.div className='bottom' variants={buttonIconAnim}></motion.div>
 				</motion.div>
 				<motion.div
-					variants={menuContentAnim}
-					initial='closed'
-					animate={isOpen ? 'open' : 'closed'}
-					onMouseEnter={() => setIsOpen(true)}
-					onMouseLeave={() => setIsOpen(false)}
+					variants={menuWrapperAnim}
+					className='menuWrapper'
+					initial='close'
+					animate={isMenuOpen ? 'open' : 'close'}
+					onMouseEnter={() => setIsMenuOpen(true)}
+					onMouseLeave={() => setIsMenuOpen(false)}
 				>
-					<motion.div className='selectedBack' style={{ translateX: x }}></motion.div>
 					<div className='menu'>
 						<ul className='menuList'>
-							<li>
-								<p
-									ref={aboutRef}
-									onMouseEnter={(event) => menuHover(event.currentTarget)}
-									onMouseLeave={activeMenu}
-									onClick={() => selectPage(0)}
-								>
-									ABOUT ME
-								</p>
-							</li>
-							<li>
-								<p
-									ref={skillRef}
-									onMouseEnter={(event) => menuHover(event.currentTarget)}
-									onMouseLeave={activeMenu}
-									onClick={() => selectPage(1)}
-								>
-									SKILLS
-								</p>
-							</li>
-							<li>
-								<p
-									ref={projRef}
-									onMouseEnter={(event) => menuHover(event.currentTarget)}
-									onMouseLeave={activeMenu}
-									onClick={() => selectPage(2)}
-								>
-									PROJECTS
-								</p>
-							</li>
+							{MENU_LINKS.map(({ name, link }, i) => {
+								return (
+									<MenuLink
+										key={i}
+										index={i}
+										name={name}
+										navLink={link}
+										hoverPageNo={hoverPage}
+										onTap={() => selectPage(i)}
+										onHoverStart={() => setHoverPage(i)}
+										onHoverEnd={() => setHoverPage(currentPage)}
+									/>
+								);
+							})}
 						</ul>
 					</div>
-					<motion.div className='selectedFront' style={{ translateX: x }}></motion.div>
 				</motion.div>
-			</motion.div>
-
-			<div className='socialContainer'>
-				<ul>
-					{socialLinks.map((el) => {
-						return (
-							<motion.li key={el.name} variants={socialAnim} whileHover='hover'>
-								<a href={el.link} target='_blank' rel='noreferrer'>
-									{el.name}
-								</a>
-							</motion.li>
-						);
-					})}
-				</ul>
 			</div>
+
+			<SocialIcons />
 		</motion.section>
 	);
 }

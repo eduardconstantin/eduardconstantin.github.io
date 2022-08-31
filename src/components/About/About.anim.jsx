@@ -1,18 +1,26 @@
-const aboutAnim = {
+export const aboutAnim = {
 	init: {
+		opacity: 0,
 		transition: {
 			staggerChildren: 0.3,
 		},
 	},
 	anim: {
+		opacity: 1,
 		transition: {
 			delay: 0.2,
 			staggerChildren: 0.3,
 		},
 	},
+	end: {
+		opacity: 0,
+		transition: {
+			duration: 0.5,
+		},
+	},
 };
 
-const nameAnim = {
+export const nameAnim = {
 	init: {
 		opacity: 0,
 		y: 10,
@@ -27,7 +35,7 @@ const nameAnim = {
 	},
 };
 
-const iconsAnim = {
+export const iconsAnim = {
 	init: {
 		opacity: 0,
 		y: 10,
@@ -38,7 +46,7 @@ const iconsAnim = {
 	},
 };
 
-const skillAnim = {
+export const skillAnim = {
 	leave: {
 		rotateX: 0,
 		rotateY: 0,
@@ -61,5 +69,3 @@ const skillAnim = {
 		},
 	},
 };
-
-export { aboutAnim, iconsAnim, skillAnim, nameAnim };
