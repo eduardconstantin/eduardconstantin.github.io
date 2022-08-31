@@ -19,8 +19,7 @@ export default function Menu({ currentPage, selectPage }) {
 					className='menuButton'
 					variants={menuButtonAnim}
 					initial='close'
-					animate='close'
-					whileHover='open'
+					animate={isMenuOpen ? 'open' : 'close'}
 					onMouseEnter={() => setIsMenuOpen(true)}
 					onMouseLeave={() => setIsMenuOpen(false)}
 				>
