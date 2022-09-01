@@ -9,7 +9,7 @@ export const SocialIcons = () => {
 			<ul>
 				{socialLinks.map(({ name, link }) => {
 					return (
-						<motion.li key={name} variants={socialAnim} whileHover='hover' initial='init' animate='init'>
+						<motion.li key={name} variants={socialAnim} whileHover='hover' whileTap='hover' initial='init' animate='init'>
 							<motion.a href={link} target='_blank' rel='noreferrer' variants={socialIconAnim}>
 								{name}
 							</motion.a>

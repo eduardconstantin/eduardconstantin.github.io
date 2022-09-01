@@ -20,8 +20,9 @@ export default function Menu({ currentPage, selectPage }) {
 					variants={menuButtonAnim}
 					initial='close'
 					animate={isMenuOpen ? 'open' : 'close'}
-					onMouseEnter={() => setIsMenuOpen(true)}
-					onMouseLeave={() => setIsMenuOpen(false)}
+					whileHover='hover'
+					whileTap='tap'
+					onTapStart={() => setIsMenuOpen(!isMenuOpen)}
 				>
 					<motion.div className='top' variants={buttonIconAnim}></motion.div>
 					<motion.div className='left' variants={buttonIconAnim}></motion.div>
@@ -33,8 +34,7 @@ export default function Menu({ currentPage, selectPage }) {
 					className='menuWrapper'
 					initial='close'
 					animate={isMenuOpen ? 'open' : 'close'}
-					onMouseEnter={() => setIsMenuOpen(true)}
-					onMouseLeave={() => setIsMenuOpen(false)}
+					onHoverEnd={() => setIsMenuOpen(false)}
 				>
 					<div className='menu'>
 						<ul className='menuList'>
@@ -46,9 +46,14 @@ export default function Menu({ currentPage, selectPage }) {
 										name={name}
 										navLink={link}
 										hoverPageNo={hoverPage}
-										onTap={() => selectPage(i)}
+										onTap={() => {
+											selectPage(i);
+											setIsMenuOpen(false);
+										}}
 										onHoverStart={() => setHoverPage(i)}
 										onHoverEnd={() => setHoverPage(currentPage)}
+										onTapStart={() => setHoverPage(i)}
+										onTapCancel={() => setHoverPage(currentPage)}
 									/>
 								);
 							})}
