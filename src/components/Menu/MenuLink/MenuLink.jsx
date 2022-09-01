@@ -3,9 +3,25 @@ import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
-export const MenuLink = ({ index, name, navLink, hoverPageNo, onTap, onHoverStart, onHoverEnd }) => {
+export const MenuLink = ({
+	index,
+	name,
+	navLink,
+	hoverPageNo,
+	onTap,
+	onHoverStart,
+	onHoverEnd,
+	onTapStart,
+	onTapCancel,
+}) => {
 	return (
-		<motion.li onTap={onTap} onHoverStart={onHoverStart} onHoverEnd={onHoverEnd}>
+		<motion.li
+			onTap={onTap}
+			onHoverStart={onHoverStart}
+			onHoverEnd={onHoverEnd}
+			onTapStart={onTapStart}
+			onTapCancel={onTapCancel}
+		>
 			<NavLink to={navLink}>{name}</NavLink>
 			{hoverPageNo === index && (
 				<>
@@ -25,6 +41,8 @@ MenuLink.defaultProps = {
 	onTap: () => {},
 	onHoverStart: () => {},
 	onHoverEnd: () => {},
+	onTapStart: () => {},
+	onTapCancel: () => {},
 };
 
 MenuLink.propTypes = {
@@ -35,4 +53,6 @@ MenuLink.propTypes = {
 	onTap: PropTypes.func,
 	onHoverStart: PropTypes.func,
 	onHoverEnd: PropTypes.func,
+	onTapStart: PropTypes.func,
+	onTapCancel: PropTypes.func,
 };
