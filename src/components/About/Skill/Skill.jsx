@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { skillIconAnim, skillNameAnim } from './Skill.anim';
+import { skillIconAnim, skillNameAnim, skillBgAnim } from './Skill.anim';
 
-export const Skill = ({ text }) => {
+export const Skill = ({ name, icon }) => {
 	return (
-		<motion.div className='skill' initial='leave' animate='leave' whileHover='hover'>
-			<motion.div className='icon' variants={skillIconAnim} custom={Math.random()}></motion.div>
+		<motion.div className='skill' initial='init' animate='init' whileHover='hover' whileTap='hover'>
+			<motion.div className='skillBg' variants={skillBgAnim}></motion.div>
+			<motion.div className='icon' variants={skillIconAnim} style={{ backgroundImage: `url(${icon})` }}></motion.div>
 			<motion.p className='skillName' variants={skillNameAnim}>
-				{text}
+				{name}
 			</motion.p>
 		</motion.div>
 	);
