@@ -28,9 +28,13 @@ export const nameAnim = {
 	anim: {
 		opacity: 1,
 		y: 0,
-		backgroundPosition: ['0% 100%', '100% 0%', '0% 100%', '100% 0%', '0% 100%'],
+		backgroundColor: [
+			'linear-gradient(45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%)',
+			'linear-gradient(-45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%)',
+			'linear-gradient(45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%)',
+		],
 		transition: {
-			backgroundPosition: { duration: 40, repeat: Infinity },
+			background: { duration: 40, repeat: Infinity },
 		},
 	},
 };

@@ -10,57 +10,37 @@
 
 	h5 {
 		color: $text-color;
-		letter-spacing: 5px;
-		margin-bottom: 40px;
+		letter-spacing: 0.24vw;
+		margin-bottom: clamp(2rem, 1.3vw + 1.7rem, 5rem);
 		user-select: none;
+		font-size: clamp(0.7rem, 0.5vw + 0.6rem, 1.9rem);
 	}
 
 	h3 {
 		font-weight: 600;
 		font-style: italic;
-		font-size: max(1.5rem, 1.8vw);
+		font-size: clamp(1rem, 1.2vw + 0.8rem, 3.9rem);
 		color: $text-color;
 		text-transform: uppercase;
-		letter-spacing: 10px;
-		margin-bottom: -10px;
+		letter-spacing: 0.48vw;
+		margin-bottom: -0.48vw;
 		user-select: none;
 	}
 
 	h2 {
 		position: relative;
 		font-family: 'Stay Dreaming';
-		font-size: 200px;
+		font-size: clamp(4rem, 8.9vw + 2.2rem, 25rem);
 		margin: 0;
-		width: 1000px;
+		// width: 1000px;
 		background-size: 300%;
 		color: $text-color;
-		background-image: url(../../Assets/images/Gradient_7.jpg);
+		// background-image: url(../../Assets/images/Gradient_7.jpg);
+		background: linear-gradient(45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%);
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		user-select: none;
-	}
-
-	@keyframes hue {
-		from {
-			-webkit-filter: hue-rotate(0deg);
-		}
-		to {
-			-webkit-filter: hue-rotate(-360deg);
-		}
-
-		0% {
-			background-position-x: 0%;
-		}
-		25% {
-			background-position-x: 100%;
-		}
-		75% {
-			background-position-x: 80%;
-		}
-		100% {
-			background-position-x: 0%;
-		}
 	}
 
 	.skillsContainer {
@@ -69,11 +49,11 @@
 		z-index: 9;
 		display: flex;
 		justify-content: center;
-		gap: 45px;
+		gap: clamp(2rem, 1.3vw + 1.7rem, 5rem);
 
 		.skill {
-			width: 60px;
-			height: 60px;
+			width: clamp(2.5rem, 1.4vw + 2.2rem, 5.7rem);
+			height: clamp(2.5rem, 1.4vw + 2.2rem, 5.7rem);
 			border-radius: 10px;
 			background-color: #6ec926;
 			position: relative;
