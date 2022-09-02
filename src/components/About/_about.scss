@@ -96,48 +96,18 @@
 				user-select: none;
 			}
 
-			&:hover:before {
-				background-size: 70%;
-				filter: saturate(4);
-				animation: shake 0.2s linear;
-				-webkit-animation: shake 0.2s linear;
-			}
-
-			@keyframes shake {
-				0% {
-					background-position: 50% 50%;
-					filter: saturate(1) drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) drop-shadow(0px 0px 0px rgba(0, 0, 255, 0));
-				}
-				25% {
-					background-position: 20% 80%;
-					filter: saturate(3) drop-shadow(3px -2px 0px rgba(255, 0, 0, 0.7)) drop-shadow(-2px 3px 0px rgba(0, 0, 255, 0.7));
-				}
-				75% {
-					background-position: 80% 20%;
-					filter: saturate(3) drop-shadow(-2px 3px 0px rgba(255, 0, 0, 0.7)) drop-shadow(3px -2px 0px rgba(0, 0, 255, 0.7));
-				}
-				100% {
-					background-position: 50% 50%;
-					filter: saturate(1) drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) drop-shadow(0px 0px 0px rgba(0, 0, 255, 0));
-				}
-			}
-
-			&:before {
-				content: '';
+			.skillBg {
 				border-radius: 10px;
 				border: 1px solid rgba(200, 242, 155, 0.3);
 				background-color: rgba(200, 242, 155, 0.1);
 				backdrop-filter: blur(10px);
-				filter: saturate(1);
-				background-image: url(../../Assets/images/dots.png);
+				background-image: url(../../assets/images/dots.png);
 				background-size: 90%;
 				background-position: center;
 				margin: auto;
 				width: 100%;
 				height: 100%;
 				display: block;
-				transform: rotate(45deg);
-				transition: all 0.15s;
 			}
 
 			.icon {
@@ -151,19 +121,8 @@
 				background-size: 60%;
 			}
 
-			&:nth-child(1) {
-				.icon {
-					background-image: url(../../Assets/images/icons/web.png);
-				}
-			}
-			&:nth-child(2) {
-				.icon {
-					background-image: url(../../Assets/images/icons/gameDev.png);
-				}
-			}
 			&:nth-child(3) {
 				.icon {
-					background-image: url(../../Assets/images/icons/design.png);
 					background-position: 50% 58%;
 				}
 			}

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Skill } from './Skill/Skill';
 import { aboutAnim, iconsAnim, nameAnim } from './About.anim';
-import { SKILL_NAME } from './About.constants';
+import { SKILLS } from './About.constants';
 
 export default function About() {
 	return (
@@ -12,8 +12,8 @@ export default function About() {
 			<motion.h5 variants={iconsAnim}>- Application Developer @ IBM Romania -</motion.h5>
 
 			<motion.div className='skillsContainer' variants={iconsAnim}>
-				{SKILL_NAME.map((skill) => (
-					<Skill key={skill} text={skill} />
+				{SKILLS.map((skill) => (
+					<Skill key={skill.name} name={skill.name} icon={skill.icon} />
 				))}
 			</motion.div>
 		</motion.section>
