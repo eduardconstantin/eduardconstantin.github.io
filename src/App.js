@@ -19,7 +19,7 @@ const App = () => {
 			<AnimateSharedLayout>
 				<AnimatePresence exitBeforeEnter>
 					{hasLoaded ? (
-						<motion.div key='content'>
+						<motion.div key='content' className='content'>
 							<Background background={bg} hasLoaded={hasLoaded} />
 							<AnimatePresence exitBeforeEnter>
 								<Routes location={location} key={location.pathname}>
