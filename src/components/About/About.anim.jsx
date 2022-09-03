@@ -24,17 +24,16 @@ export const nameAnim = {
 	init: {
 		opacity: 0,
 		y: 10,
+		'--deg': '45deg',
 	},
 	anim: {
+		'--deg': '180deg',
 		opacity: 1,
 		y: 0,
-		backgroundColor: [
-			'linear-gradient(45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%)',
-			'linear-gradient(-45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%)',
-			'linear-gradient(45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%)',
-		],
+		backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
 		transition: {
-			background: { duration: 40, repeat: Infinity },
+			'--deg': { repeat: Infinity, repeatType: 'mirror', duration: 10 },
+			backgroundPosition: { duration: 40, repeat: Infinity },
 		},
 	},
 };

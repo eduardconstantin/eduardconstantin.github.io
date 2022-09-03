@@ -32,11 +32,9 @@
 		font-family: 'Stay Dreaming';
 		font-size: clamp(4rem, 8.9vw + 2.2rem, 25rem);
 		margin: 0;
-		// width: 1000px;
-		background-size: 300%;
+		background-size: 350%;
 		color: $text-color;
-		// background-image: url(../../Assets/images/Gradient_7.jpg);
-		background: linear-gradient(45deg, rgba(0, 221, 181, 1) 0%, rgba(29, 12, 112, 1) 100%);
+		background-image: -webkit-linear-gradient(var(--deg), #ace0f9, #fff1eb, #c2ce9c, #e2c58b);
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
