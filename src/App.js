@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { hot } from 'react-hot-loader/root';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 import { Background, generateBackgroundIcons, Menu, Welcome, About, Skills, Projects } from './components';
 
@@ -42,4 +41,4 @@ const App = () => {
 	);
 };
 
-export default hot(App);
+export default App;
