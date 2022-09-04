@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3180c3d.css",
-    "main.js": "/static/js/main.486db9d9.js",
+    "main.css": "/static/css/main.3871271f.css",
+    "main.js": "/static/js/main.ce8ff8fa.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/dissertation.png": "/static/media/dissertation.e9b84ec7a27ce201cef9.png",
     "static/media/bachelor.png": "/static/media/bachelor.595253c9e62e5c9649e1.png",
@@ -24,13 +24,13 @@
     "static/media/ntoologo.png": "/static/media/ntoologo.158237755bef73c8564c.png",
     "static/media/globe2.svg": "/static/media/globe2.b3a1b225757db83d39e2355a45e09b2d.svg",
     "static/media/dribbble.svg": "/static/media/dribbble.2e5ef9143fc6c7e340519d903c307308.svg",
-    "index.html": "/index.html",
     "static/media/github.svg": "/static/media/github.dd6f52ca42dd85742c860d6b0080dfc1.svg",
-    "main.f3180c3d.css.map": "/static/css/main.f3180c3d.css.map",
-    "main.486db9d9.js.map": "/static/js/main.486db9d9.js.map"
+    "index.html": "/index.html",
+    "main.3871271f.css.map": "/static/css/main.3871271f.css.map",
+    "main.ce8ff8fa.js.map": "/static/js/main.ce8ff8fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3180c3d.css",
-    "static/js/main.486db9d9.js"
+    "static/css/main.3871271f.css",
+    "static/js/main.ce8ff8fa.js"
   ]
 }
