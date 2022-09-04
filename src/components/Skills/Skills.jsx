@@ -4,8 +4,9 @@ import { web, game, design, skill } from './Skills.constants';
 import Counter from '../Counter/Counter';
 import SkillItem from './SkillItem/SkillItem';
 import { skillsAnim, leftAnim, rightAnim, skillCatAnim } from './Skills.anim';
+import { useChangeDocumentTitle } from '../../helpers/useChangeDocumentTitle';
 
-export default function Skills() {
+export default function Skills({ pageTitle }) {
 	const skillCat = [web, game, design];
 
 	const skillInterval = useRef(0);
@@ -37,6 +38,8 @@ export default function Skills() {
 		skillCatChange();
 		return () => clearInterval(skillInterval.current);
 	}, []);
+
+	useChangeDocumentTitle(pageTitle);
 
 	return (
 		<motion.section className='skills' variants={skillsAnim} initial='init' animate='anim' exit='end'>
