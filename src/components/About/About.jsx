@@ -3,8 +3,11 @@ import { motion } from 'framer-motion';
 import { Skill } from './Skill/Skill';
 import { aboutAnim, iconsAnim, nameAnim } from './About.anim';
 import { SKILLS } from './About.constants';
+import { useChangeDocumentTitle } from '../../helpers/useChangeDocumentTitle';
 
-export default function About() {
+export default function About({ pageTitle }) {
+	useChangeDocumentTitle(pageTitle);
+
 	return (
 		<motion.section className='about' variants={aboutAnim} initial='init' animate='anim' exit='end'>
 			<motion.h3 variants={iconsAnim}>Hello there, my name is</motion.h3>
