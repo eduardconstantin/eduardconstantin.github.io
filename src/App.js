@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 import { Background, generateBackgroundIcons, Menu, Welcome, About, Skills, Projects } from './components';
+import { useGaTracker } from './helpers/useGaTracker';
 
 const App = () => {
 	const location = useLocation();
 	const [hasLoaded, setHasLoaded] = useState(false);
 	const [bg, setBg] = useState([]);
 	const [currentPage, setCurrentPage] = useState(0);
+	useGaTracker(location);
 
 	useEffect(() => {
 		setBg(generateBackgroundIcons());
