@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3871271f.css",
-    "main.js": "/static/js/main.ce8ff8fa.js",
+    "main.js": "/static/js/main.f4b02fcd.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/dissertation.png": "/static/media/dissertation.e9b84ec7a27ce201cef9.png",
     "static/media/bachelor.png": "/static/media/bachelor.595253c9e62e5c9649e1.png",
@@ -27,10 +27,10 @@
     "static/media/github.svg": "/static/media/github.dd6f52ca42dd85742c860d6b0080dfc1.svg",
     "index.html": "/index.html",
     "main.3871271f.css.map": "/static/css/main.3871271f.css.map",
-    "main.ce8ff8fa.js.map": "/static/js/main.ce8ff8fa.js.map"
+    "main.f4b02fcd.js.map": "/static/js/main.f4b02fcd.js.map"
   },
   "entrypoints": [
     "static/css/main.3871271f.css",
-    "static/js/main.ce8ff8fa.js"
+    "static/js/main.f4b02fcd.js"
   ]
 }
