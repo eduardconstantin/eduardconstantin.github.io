@@ -3,10 +3,6 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 import { Background, generateBackgroundIcons, Menu, Welcome, About, Skills, Projects } from './components';
 import { useGaTracker } from './helpers/useGaTracker';
-import ReactGA from 'react-ga4';
-const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
-
-ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
 	const location = useLocation();
