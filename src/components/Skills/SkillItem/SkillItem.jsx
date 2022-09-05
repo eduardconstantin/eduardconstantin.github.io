@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SkillItem = ({ icon, title, xp }) => {
+export const SkillItem = ({ icon, title, xp }) => {
 	return (
 		<div className='skill'>
 			<i className='iconContainer'>
@@ -14,5 +14,3 @@ const SkillItem = ({ icon, title, xp }) => {
 		</div>
 	);
 };
-
-export default SkillItem;

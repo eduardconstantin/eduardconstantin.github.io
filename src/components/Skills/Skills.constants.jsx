@@ -13,33 +13,40 @@ import vuforiaIcon from '../../assets/images/skills/vuforia.png';
 import psIcon from '../../assets/images/skills/ps.png';
 import figmaIcon from '../../assets/images/skills/figma.png';
 
-const web = [
-	{ skillName: 'HTML', xp: '8 YRS', icon: htmlIcon },
-	{ skillName: 'CSS', xp: '8 YRS', icon: cssIcon },
-	{ skillName: 'Javascript', xp: '4 YRS', icon: jsIcon },
-	{ skillName: 'Bootstrap', xp: '5 YRS', icon: bootstrapIcon },
-	{ skillName: 'C#', xp: '3 YRS', icon: csharpIcon },
-	{ skillName: 'react js', xp: '2 YRS', icon: reactIcon },
-	{ skillName: 'sql', xp: '2 YRS', icon: sqlIcon },
-	{ skillName: '.net', xp: '2 YRS', icon: dotnetIcon },
-];
-
-const game = [
-	{ skillName: 'Unity', xp: '5 YRS', icon: unityIcon },
-	{ skillName: 'C#', xp: '3 YRS', icon: csharpIcon },
-	{ skillName: 'Vuforia', xp: '3 YRS', icon: vuforiaIcon },
-];
-
-const design = [
-	{ skillName: 'Photoshop', xp: '15 YRS', icon: psIcon },
-	{ skillName: 'Figma', xp: '1 YR', icon: figmaIcon },
-];
-
-const skill = [
-	{ name: ['Creative', 'Perseverant', 'Patient', 'Enthusiastic', 'Hardworking', 'Amusing'], percentage: 100 },
-	{ name: 'Web Dev', percentage: 50 },
-	{ name: 'Game Dev', percentage: 20 },
-	{ name: 'Design', percentage: 30 },
-];
-
-export { web, game, design, skill };
+export const skillCat = {
+	web: {
+		categoryName: 'Web Dev',
+		percentage: 50,
+		skillList: [
+			{ name: 'HTML', xp: '8 YRS', icon: htmlIcon },
+			{ name: 'CSS', xp: '8 YRS', icon: cssIcon },
+			{ name: 'Javascript', xp: '4 YRS', icon: jsIcon },
+			{ name: 'Bootstrap', xp: '5 YRS', icon: bootstrapIcon },
+			{ name: 'C#', xp: '3 YRS', icon: csharpIcon },
+			{ name: 'react js', xp: '2 YRS', icon: reactIcon },
+			{ name: 'sql', xp: '2 YRS', icon: sqlIcon },
+			{ name: '.net', xp: '2 YRS', icon: dotnetIcon },
+		],
+	},
+	game: {
+		categoryName: 'Game Dev',
+		percentage: 20,
+		skillList: [
+			{ name: 'Unity', xp: '5 YRS', icon: unityIcon },
+			{ name: 'C#', xp: '3 YRS', icon: csharpIcon },
+			{ name: 'Vuforia', xp: '3 YRS', icon: vuforiaIcon },
+		],
+	},
+	design: {
+		categoryName: 'Design',
+		percentage: 30,
+		skillList: [
+			{ name: 'Photoshop', xp: '15 YRS', icon: psIcon },
+			{ name: 'Figma', xp: '1 YR', icon: figmaIcon },
+		],
+	},
+	soft: {
+		categoryName: ['Creative', 'Perseverant', 'Patient', 'Enthusiastic', 'Hardworking', 'Amusing'],
+		percentage: 100,
+	},
+};

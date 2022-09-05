@@ -1,59 +1,59 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { web, game, design, skill } from './Skills.constants';
+import { skillCat } from './Skills.constants';
 import Counter from '../Counter/Counter';
-import SkillItem from './SkillItem/SkillItem';
+import { SkillItem } from './SkillItem/SkillItem';
 import { skillsAnim, leftAnim, rightAnim, skillCatAnim } from './Skills.anim';
 import { useChangeDocumentTitle } from '../../helpers/useChangeDocumentTitle';
 
 export default function Skills({ pageTitle }) {
-	const skillCat = [web, game, design];
+	const { soft, ...hardSkills } = skillCat;
 
 	const skillInterval = useRef(0);
 	const skillTimeout = useRef(0);
 
-	const [hardSkillIndex, setHardSkillIndex] = useState(0);
 	const [softSkillIndex, setSoftSkillIndex] = useState(0);
+	const [skillCategory, setSkillCategory] = useState('soft');
 
-	const skillCatChange = () => {
+	useChangeDocumentTitle(pageTitle);
+
+	const softSkillChange = () => {
 		skillInterval.current = setInterval(() => {
-			setSoftSkillIndex((prev) => (prev + 1) % skill[0].name.length);
+			setSoftSkillIndex((prev) => (prev + 1) % skillCat['soft'].categoryName.length);
 		}, 4500);
 	};
 
-	const skillMouseEnter = (index) => {
-		setHardSkillIndex(index + 1);
+	const skillMouseEnter = (name) => {
+		setSkillCategory(name);
 		clearInterval(skillInterval.current);
 		clearTimeout(skillTimeout.current);
 	};
 
 	const skillMouseLeave = () => {
 		skillTimeout.current = setTimeout(() => {
-			setHardSkillIndex(0);
-			skillCatChange();
+			setSkillCategory('soft');
+			softSkillChange();
 		}, 150);
 	};
 
 	useEffect(() => {
-		skillCatChange();
+		softSkillChange();
 		return () => clearInterval(skillInterval.current);
 	}, []);
-
-	useChangeDocumentTitle(pageTitle);
 
 	return (
 		<motion.section className='skills' variants={skillsAnim} initial='init' animate='anim' exit='end'>
 			<motion.div className='leftSide' variants={leftAnim}>
-				{skillCat.map((skill, i) => {
+				{Object.entries(hardSkills).map((skill) => {
 					return (
 						<div
-							key={i}
+							key={skill[0]}
 							className='skillsContainer'
-							onMouseEnter={() => skillMouseEnter(i)}
+							onMouseEnter={() => skillMouseEnter(skill[0])}
 							onMouseLeave={() => skillMouseLeave()}
 						>
-							{skill.map((el) => (
-								<SkillItem key={el.skillName} icon={el.icon} title={el.skillName} xp={el.xp} />
+							{skill[1].skillList.map(({ name, icon, xp }) => (
+								<SkillItem key={name} icon={icon} title={name} xp={xp} />
 							))}
 						</div>
 					);
@@ -62,7 +62,7 @@ export default function Skills({ pageTitle }) {
 
 			<motion.div className='rightSide' variants={rightAnim}>
 				<AnimatePresence initial={false}>
-					{hardSkillIndex === 0 ? (
+					{skillCategory === 'soft' ? (
 						<motion.h1
 							key={`s${softSkillIndex}`}
 							className='catName'
@@ -71,23 +71,23 @@ export default function Skills({ pageTitle }) {
 							animate='visible'
 							exit='exit'
 						>
-							{skill[0].name[softSkillIndex]}
+							{skillCat['soft'].categoryName[softSkillIndex]}
 						</motion.h1>
 					) : (
 						<motion.h1
-							key={`h${hardSkillIndex}`}
+							key={`h${skillCategory}`}
 							className='catName'
 							variants={skillCatAnim}
 							initial='hidden'
 							animate='visible'
 							exit='exit'
 						>
-							{skill[hardSkillIndex].name}
+							{skillCat[skillCategory].categoryName}
 						</motion.h1>
 					)}
 				</AnimatePresence>
 				<div className='percentage'>
-					<Counter numberValue={skill[hardSkillIndex].percentage} decimalDigits={0} />
+					<Counter numberValue={skillCat[skillCategory].percentage} decimalDigits={0} />
 				</div>
 			</motion.div>
 		</motion.section>
