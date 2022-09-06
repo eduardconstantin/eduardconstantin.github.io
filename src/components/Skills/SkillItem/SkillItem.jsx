@@ -4,7 +4,7 @@ export const SkillItem = ({ icon, title, xp }) => {
 	return (
 		<div className='skill'>
 			<i className='iconContainer'>
-				<img src={icon} alt='icon' height='35px' />
+				<img src={icon} alt='icon' />
 			</i>
 
 			<div className='skillContent'>
