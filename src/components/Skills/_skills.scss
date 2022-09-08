@@ -167,7 +167,7 @@
 }
 @media (max-width: 768px) {
 	.skills {
-		height: 72%;
+		height: 75%;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
 
@@ -194,6 +194,7 @@
 		}
 		.rightSide {
 			width: 100%;
+			height: 45%;
 		}
 	}
 }
