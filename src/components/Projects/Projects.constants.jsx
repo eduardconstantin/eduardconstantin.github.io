@@ -25,7 +25,7 @@ import btnanim from '../../assets/images/projects/btnAnim.png';
 import navui from '../../assets/images/projects/navui.png';
 // import mplogo from '../../assets/images/projects/mplogo.png';
 
-const web = [
+export const web = [
 	{
 		name: 'Portfolio',
 		date: '2022-05-08',
@@ -61,7 +61,8 @@ const web = [
 		links: [{ icon: dribbbleLink, link: 'https://dribbble.com/shots/16874996-Travel-Deck' }],
 	},
 ];
-const design = [
+
+export const design = [
 	{
 		name: 'Xbox Dashboard UI',
 		date: '2022-02-13',
@@ -109,7 +110,8 @@ const design = [
 	},
 	// {name: "Midnight Pulse Logo", date: "2018-07-17", cover: mplogo, links:[{icon: dribbbleLink, link:"#"}]}
 ];
-const game = [
+
+export const game = [
 	{ name: 'Ge Ex', date: '2014-09-01', cover: geex, links: [] },
 	{
 		name: 'The Last Ancient',
@@ -123,5 +125,3 @@ const game = [
 	{ name: 'Oneplus 7 AR project', date: '2019-05-21', cover: arop7, links: [] },
 	{ name: 'Castle Escape', date: '2018-12-20', cover: castleescape, links: [] },
 ];
-
-export { web, game, design };

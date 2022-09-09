@@ -32,7 +32,12 @@ export default function ProjectsSlider({ category, data }) {
 								<img src={el.cover} alt='cover' />
 								<motion.div className='links' variants={linksContainerAnim}>
 									{el.links.map((el) => (
-										<motion.a href={el.link} style={{ backgroundImage: `url("${el.icon}")` }} variants={linksAnim}></motion.a>
+										<motion.a
+											key={el.link}
+											href={el.link}
+											style={{ backgroundImage: `url("${el.icon}")` }}
+											variants={linksAnim}
+										></motion.a>
 									))}
 								</motion.div>
 								<motion.p variants={titleAnim}>{el.name}</motion.p>
