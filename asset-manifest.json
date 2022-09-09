@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b9a9229.css",
-    "main.js": "/static/js/main.8a00094d.js",
+    "main.css": "/static/css/main.a7cb37ff.css",
+    "main.js": "/static/js/main.2e732421.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/dissertation.png": "/static/media/dissertation.e9b84ec7a27ce201cef9.png",
     "static/media/bachelor.png": "/static/media/bachelor.595253c9e62e5c9649e1.png",
@@ -26,11 +26,11 @@
     "static/media/dribbble.svg": "/static/media/dribbble.2e5ef9143fc6c7e340519d903c307308.svg",
     "static/media/github.svg": "/static/media/github.dd6f52ca42dd85742c860d6b0080dfc1.svg",
     "index.html": "/index.html",
-    "main.0b9a9229.css.map": "/static/css/main.0b9a9229.css.map",
-    "main.8a00094d.js.map": "/static/js/main.8a00094d.js.map"
+    "main.a7cb37ff.css.map": "/static/css/main.a7cb37ff.css.map",
+    "main.2e732421.js.map": "/static/js/main.2e732421.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b9a9229.css",
-    "static/js/main.8a00094d.js"
+    "static/css/main.a7cb37ff.css",
+    "static/js/main.2e732421.js"
   ]
 }
