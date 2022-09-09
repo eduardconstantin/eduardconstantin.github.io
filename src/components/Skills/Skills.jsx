@@ -61,7 +61,7 @@ export default function Skills({ pageTitle }) {
 			</motion.div>
 
 			<motion.div className='rightSide' variants={rightAnim}>
-				<AnimatePresence initial={false}>
+				<AnimatePresence initial={true} exitBeforeEnter>
 					{skillCategory === 'soft' ? (
 						<motion.h1
 							key={`s${softSkillIndex}`}

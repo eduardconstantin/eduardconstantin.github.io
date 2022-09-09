@@ -25,6 +25,8 @@ export const leftAnim = {
 		rotateY: 15,
 		opacity: 1,
 		transition: {
+			type: 'spring',
+			bounce: 0.4,
 			delay: 0.2,
 		},
 	},
@@ -32,13 +34,15 @@ export const leftAnim = {
 
 export const rightAnim = {
 	init: {
-		x: 90,
+		x: 95,
 		opacity: 0,
 	},
 	anim: {
 		x: 0,
 		opacity: 1,
 		transition: {
+			type: 'spring',
+			bounce: 0.4,
 			delay: 0.2,
 		},
 	},
@@ -50,7 +54,6 @@ export const skillCatAnim = {
 		letterSpacing: '-30px',
 		transition: {
 			duration: 1,
-			delay: 1,
 		},
 	},
 	visible: {
@@ -58,14 +61,14 @@ export const skillCatAnim = {
 		letterSpacing: '1px',
 		transition: {
 			type: 'spring',
-			damping: 12,
-			delay: 0.3,
+			bounce: 0.5,
 		},
 	},
 	exit: {
 		opacity: 0,
+		letterSpacing: '-30px',
 		transition: {
-			duration: 0.1,
+			duration: 0.2,
 		},
 	},
 };
