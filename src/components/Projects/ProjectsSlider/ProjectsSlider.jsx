@@ -23,28 +23,28 @@ export default function ProjectsSlider({ category, data }) {
 			>
 				{data
 					.sort((a, d) => (a.date > d.date ? -1 : 1))
-					.map((el) => {
+					.map(({ name, cover, links }) => {
 						return (
 							<motion.div
-								key={el.name}
+								key={name}
 								className='slide'
 								variants={sliderAnim}
 								whileHover='hover'
 								initial='hidden'
 								animate='hidden'
 							>
-								<img src={el.cover} alt='cover' />
+								<img src={cover} alt='cover' />
 								<motion.div className='links' variants={linksContainerAnim}>
-									{el.links.map((el) => (
+									{links.map(({ link, icon }) => (
 										<motion.a
-											key={el.link}
-											href={el.link}
-											style={{ backgroundImage: `url("${el.icon}")` }}
+											key={link}
+											href={link}
+											style={{ backgroundImage: `url("${icon}")` }}
 											variants={linksAnim}
 										></motion.a>
 									))}
 								</motion.div>
-								<motion.p variants={titleAnim}>{el.name}</motion.p>
+								<motion.p variants={titleAnim}>{name}</motion.p>
 							</motion.div>
 						);
 					})}
