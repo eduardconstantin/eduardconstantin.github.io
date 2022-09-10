@@ -1,15 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Flicking from '@egjs/react-flicking';
+import Flicking, { ViewportSlot } from '@egjs/react-flicking';
+import { Arrow } from '@egjs/flicking-plugins';
 import '@egjs/react-flicking/dist/flicking.css';
+import '@egjs/flicking-plugins/dist/arrow.css';
 
 import { titleAnim, sliderAnim, projCatAnim, linksContainerAnim, linksAnim } from '../Projects.anim';
 
 export default function ProjectsSlider({ category, data }) {
+	const _plugins = [new Arrow()];
 	return (
 		<motion.div variants={projCatAnim}>
 			<h1>{category}</h1>
 			<Flicking
+				plugins={_plugins}
 				moveType='snap'
 				circularFallback='bound'
 				align={'center'}
@@ -44,6 +48,10 @@ export default function ProjectsSlider({ category, data }) {
 							</motion.div>
 						);
 					})}
+				<ViewportSlot>
+					<span className='flicking-arrow-prev custom-arrow'></span>
+					<span className='flicking-arrow-next custom-arrow'></span>
+				</ViewportSlot>
 			</Flicking>
 		</motion.div>
 	);
