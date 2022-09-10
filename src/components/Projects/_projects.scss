@@ -1,26 +1,22 @@
 .projects {
-	height: 100vh;
+	height: 85%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 10%;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	perspective: 50rem;
+	padding: 0 clamp(3.5rem, 3.2vw + 2.9rem, 11rem);
 
 	h1 {
 		font-family: $main-font;
-		font-size: 2.2rem;
+		font-size: clamp(1.6rem, 0.6vw + 1.5rem, 3rem);
 		color: $text-color;
 		position: relative;
 		margin-bottom: 1rem;
 
 		&::after {
 			content: '';
-			width: 20%;
+			width: 15rem;
 			height: 2px;
 			background-color: #afeb70;
 			position: absolute;
@@ -37,7 +33,7 @@
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	height: 130px;
+	height: clamp(5.5rem, 2.8vw + 4.9rem, 12rem);
 	margin-bottom: 35px;
 }
 
@@ -47,7 +43,7 @@
 	position: relative;
 }
 .slide {
-	width: 300px;
+	width: clamp(13rem, 6.4vw + 11.7rem, 28rem);
 	height: 100%;
 	align-items: flex-end;
 	border-radius: 8px;
