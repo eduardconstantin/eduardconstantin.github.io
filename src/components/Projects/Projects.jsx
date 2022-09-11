@@ -7,6 +7,7 @@ import { useChangeDocumentTitle } from '../../helpers/useChangeDocumentTitle';
 
 export default function Projects({ pageTitle }) {
 	useChangeDocumentTitle(pageTitle);
+
 	return (
 		<motion.section className='projects' variants={projectsAnim} initial='init' animate='anim' exit='end'>
 			<ProjectsSlider category='WEB DEV' data={web} />
