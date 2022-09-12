@@ -5,7 +5,7 @@ import { Arrow } from '@egjs/flicking-plugins';
 import '@egjs/react-flicking/dist/flicking.css';
 import '@egjs/flicking-plugins/dist/arrow.css';
 
-import { titleAnim, sliderAnim, projCatAnim, linksContainerAnim, linksAnim } from '../Projects.anim';
+import { projCatAnim } from '../Projects.anim';
 
 export default function ProjectsSlider({ category, data }) {
 	const [getElement, setGetElement] = useState(null);
@@ -36,27 +36,17 @@ export default function ProjectsSlider({ category, data }) {
 						.sort((a, d) => (a.date > d.date ? -1 : 1))
 						.map(({ name, cover, links }) => {
 							return (
-								<motion.div
-									key={name}
-									className='slide'
-									variants={sliderAnim}
-									whileHover='hover'
-									initial='hidden'
-									animate='hidden'
-								>
+								<div key={name} className='slide'>
 									<img src={cover} alt='cover' />
-									<motion.div className='links' variants={linksContainerAnim}>
+									<div className='links'>
 										{links.map(({ link, icon }) => (
-											<motion.a
-												key={link}
-												href={link}
-												style={{ backgroundImage: `url("${icon}")` }}
-												variants={linksAnim}
-											></motion.a>
+											<a key={link} href={link} style={{ backgroundImage: `url("${icon}")` }}>
+												link
+											</a>
 										))}
-									</motion.div>
-									<motion.p variants={titleAnim}>{name}</motion.p>
-								</motion.div>
+									</div>
+									<p>{name}</p>
+								</div>
 							);
 						})}
 				</Flicking>
