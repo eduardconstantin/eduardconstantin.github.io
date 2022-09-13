@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f355b82c.css",
-    "main.js": "/static/js/main.83410f6a.js",
+    "main.css": "/static/css/main.556ef807.css",
+    "main.js": "/static/js/main.fb1091e2.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/vclp.png": "/static/media/vclp.8327fb3748ae8b5d5774.png",
     "static/media/discover-ro.png": "/static/media/discover-ro.8852ae61067b161c45ef.png",
@@ -30,11 +30,11 @@
     "static/media/youtube.svg": "/static/media/youtube.1d26071402f4b2c4c4db63cd1137f514.svg",
     "static/media/github.svg": "/static/media/github.049a66df24a80bf61f1a560bf8be92f2.svg",
     "index.html": "/index.html",
-    "main.f355b82c.css.map": "/static/css/main.f355b82c.css.map",
-    "main.83410f6a.js.map": "/static/js/main.83410f6a.js.map"
+    "main.556ef807.css.map": "/static/css/main.556ef807.css.map",
+    "main.fb1091e2.js.map": "/static/js/main.fb1091e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f355b82c.css",
-    "static/js/main.83410f6a.js"
+    "static/css/main.556ef807.css",
+    "static/js/main.fb1091e2.js"
   ]
 }
