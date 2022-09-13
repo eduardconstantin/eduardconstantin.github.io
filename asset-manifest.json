@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.a7cb37ff.css",
-    "main.js": "/static/js/main.2e732421.js",
+    "main.css": "/static/css/main.f355b82c.css",
+    "main.js": "/static/js/main.83410f6a.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
+    "static/media/vclp.png": "/static/media/vclp.8327fb3748ae8b5d5774.png",
+    "static/media/discover-ro.png": "/static/media/discover-ro.8852ae61067b161c45ef.png",
     "static/media/dissertation.png": "/static/media/dissertation.e9b84ec7a27ce201cef9.png",
     "static/media/bachelor.png": "/static/media/bachelor.595253c9e62e5c9649e1.png",
     "static/media/godofwar.png": "/static/media/godofwar.fd14de4839e33fa92602.png",
@@ -18,19 +20,21 @@
     "static/media/smarthome.png": "/static/media/smarthome.ecfc4d88931ef61a0898.png",
     "static/media/castleescape.png": "/static/media/castleescape.7197bcd4091295ba0870.png",
     "static/media/xd.png": "/static/media/xd.f34084eb011e5fa8edaa.png",
+    "static/media/mplogo.png": "/static/media/mplogo.653bc6a55aa3401d38d7.png",
     "static/media/cc.png": "/static/media/cc.ee9efd77d484d1ff7a7e.png",
     "static/media/intimelogo.png": "/static/media/intimelogo.6266e2674a5ee82eb291.png",
     "static/media/gc.png": "/static/media/gc.51f9a8caac0cd4e27c16.png",
     "static/media/ntoologo.png": "/static/media/ntoologo.158237755bef73c8564c.png",
-    "static/media/globe2.svg": "/static/media/globe2.b3a1b225757db83d39e2355a45e09b2d.svg",
-    "static/media/dribbble.svg": "/static/media/dribbble.2e5ef9143fc6c7e340519d903c307308.svg",
-    "static/media/github.svg": "/static/media/github.dd6f52ca42dd85742c860d6b0080dfc1.svg",
+    "static/media/globe2.svg": "/static/media/globe2.49f76029015fad74a47a3551b2ae34fa.svg",
+    "static/media/dribbble.svg": "/static/media/dribbble.0dde924e21bd729572576ce4262e26c1.svg",
+    "static/media/youtube.svg": "/static/media/youtube.1d26071402f4b2c4c4db63cd1137f514.svg",
+    "static/media/github.svg": "/static/media/github.049a66df24a80bf61f1a560bf8be92f2.svg",
     "index.html": "/index.html",
-    "main.a7cb37ff.css.map": "/static/css/main.a7cb37ff.css.map",
-    "main.2e732421.js.map": "/static/js/main.2e732421.js.map"
+    "main.f355b82c.css.map": "/static/css/main.f355b82c.css.map",
+    "main.83410f6a.js.map": "/static/js/main.83410f6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7cb37ff.css",
-    "static/js/main.2e732421.js"
+    "static/css/main.f355b82c.css",
+    "static/js/main.83410f6a.js"
   ]
 }
