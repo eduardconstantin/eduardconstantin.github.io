@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import ProjectsSlider from './ProjectsSlider/ProjectsSlider';
 import { web, game, design } from './Projects.constants';
@@ -7,6 +7,7 @@ import { useChangeDocumentTitle } from '../../helpers/useChangeDocumentTitle';
 
 export default function Projects({ pageTitle }) {
 	useChangeDocumentTitle(pageTitle);
+
 	return (
 		<motion.section className='projects' variants={projectsAnim} initial='init' animate='anim' exit='end'>
 			<ProjectsSlider category='WEB DEV' data={web} />

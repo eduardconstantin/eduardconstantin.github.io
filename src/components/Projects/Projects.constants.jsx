@@ -1,6 +1,7 @@
 import webLink from '../../assets/images/links/globe2.svg';
 import dribbbleLink from '../../assets/images/links/dribbble.svg';
 import gitLink from '../../assets/images/links/github.svg';
+import ytLink from '../../assets/images/links/youtube.svg';
 
 import portfolio from '../../assets/images/projects/portfolio.png';
 import livrator from '../../assets/images/projects/livrator.png';
@@ -23,9 +24,11 @@ import itlogo from '../../assets/images/projects/intimelogo.png';
 import nyoologo from '../../assets/images/projects/ntoologo.png';
 import btnanim from '../../assets/images/projects/btnAnim.png';
 import navui from '../../assets/images/projects/navui.png';
-// import mplogo from '../../assets/images/projects/mplogo.png';
+import mplogo from '../../assets/images/projects/mplogo.png';
+import discoverro from '../../assets/images/projects/discover-ro.png';
+import vclp from '../../assets/images/projects/vclp.png';
 
-const web = [
+export const web = [
 	{
 		name: 'Portfolio',
 		date: '2022-05-08',
@@ -38,7 +41,7 @@ const web = [
 		cover: livrator,
 		links: [{ icon: webLink, link: 'https://www.livrator.ro' }],
 	},
-	{ name: 'Ghiceste cuvantul', date: '2022-03-20', cover: ghicicuvantul, links: [{ icon: webLink, link: '#' }] },
+	{ name: 'Ghiceste cuvantul', date: '2022-03-20', cover: ghicicuvantul, links: [{ icon: dribbbleLink, link: '#' }] },
 	{
 		name: 'Xbox Dashboard',
 		date: '2022-03-06',
@@ -60,14 +63,27 @@ const web = [
 		cover: traveldeck,
 		links: [{ icon: dribbbleLink, link: 'https://dribbble.com/shots/16874996-Travel-Deck' }],
 	},
-];
-const design = [
 	{
-		name: 'Xbox Dashboard UI',
-		date: '2022-02-13',
-		cover: xboxdash,
-		links: [{ icon: dribbbleLink, link: 'https://dribbble.com/shots/17656116-Xbox-Dashboard-Animation' }],
+		name: 'Navigation Menu Animation',
+		date: '2022-03-20',
+		cover: navui,
+		links: [
+			{ icon: gitLink, link: 'https://github.com/eduardconstantin/Navigation-menu-animation' },
+			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/17766382-Navigation-menu-Animation-concept' },
+		],
 	},
+	{
+		name: 'Button Animation',
+		date: '2022-05-01',
+		cover: btnanim,
+		links: [
+			{ icon: gitLink, link: 'https://github.com/eduardconstantin/Comic-book-button-anim' },
+			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/18145123-Button-Animation' },
+		],
+	},
+];
+
+export const design = [
 	{
 		name: 'Smart Home Dashboard UI',
 		date: '2022-04-03',
@@ -93,23 +109,32 @@ const design = [
 		links: [{ icon: dribbbleLink, link: 'https://dribbble.com/shots/18038998-New-York-Open-Offices-Logo-design' }],
 	},
 	{
-		name: 'Navigation Menu Animation',
-		date: '2022-03-20',
-		cover: navui,
-		links: [{ icon: dribbbleLink, link: 'https://dribbble.com/shots/17766382-Navigation-menu-Animation-concept' }],
+		name: 'Midnight Pulse Logo',
+		date: '2018-07-17',
+		cover: mplogo,
+		links: [{ icon: dribbbleLink, link: 'https://dribbble.com/shots/18302655-Midnight-Pulse-Logo-design' }],
 	},
 	{
-		name: 'Button Animation',
-		date: '2022-05-01',
-		cover: btnanim,
+		name: 'Discover Romania Concept UI',
+		date: '2022-06-05',
+		cover: discoverro,
 		links: [
-			{ icon: gitLink, link: 'https://github.com/eduardconstantin/Comic-book-button-anim' },
-			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/18145123-Button-Animation' },
+			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/18413927-Discover-Romania-Landing-page' },
+			{ icon: ytLink, link: 'https://www.youtube.com/watch?v=vzyxaw_ryyQ' },
 		],
 	},
-	// {name: "Midnight Pulse Logo", date: "2018-07-17", cover: mplogo, links:[{icon: dribbbleLink, link:"#"}]}
+	{
+		name: 'Vice City Conceput UI',
+		date: '2022-08-14',
+		cover: vclp,
+		links: [
+			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/19100552-Welcome-back-to-Vice-City-Landing-page' },
+			{ icon: ytLink, link: 'https://www.youtube.com/watch?v=ysBkWUQMLHQ' },
+		],
+	},
 ];
-const game = [
+
+export const game = [
 	{ name: 'Ge Ex', date: '2014-09-01', cover: geex, links: [] },
 	{
 		name: 'The Last Ancient',
@@ -119,9 +144,22 @@ const game = [
 	},
 	{ name: "Bachelor's degree AR project", date: '2018-07-20', cover: arbachelor, links: [] },
 	{ name: "Master's degree AR project", date: '2020-07-20', cover: ardissertation, links: [] },
-	{ name: 'LG Rollable TV AR project', date: '2019-01-23', cover: arlgtv, links: [] },
-	{ name: 'Oneplus 7 AR project', date: '2019-05-21', cover: arop7, links: [] },
-	{ name: 'Castle Escape', date: '2018-12-20', cover: castleescape, links: [] },
+	{
+		name: 'LG Rollable TV AR project',
+		date: '2019-01-23',
+		cover: arlgtv,
+		links: [{ icon: ytLink, link: 'https://www.youtube.com/watch?v=bn69s8lOCCU&t=26s' }],
+	},
+	{
+		name: 'Oneplus 7 AR project',
+		date: '2019-05-21',
+		cover: arop7,
+		links: [{ icon: ytLink, link: 'https://www.youtube.com/watch?v=188qht5Sg8k' }],
+	},
+	{
+		name: 'Castle Escape',
+		date: '2018-12-20',
+		cover: castleescape,
+		links: [{ icon: ytLink, link: 'https://www.youtube.com/watch?v=u_s-hL78goQ' }],
+	},
 ];
-
-export { web, game, design };
