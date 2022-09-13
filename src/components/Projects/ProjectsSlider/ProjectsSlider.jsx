@@ -25,6 +25,8 @@ export default function ProjectsSlider({ category, data }) {
 							parentEl: getElement,
 						}),
 					]}
+					inputType={[]}
+					preventClickOnDrag={true}
 					moveType='snap'
 					circularFallback='bound'
 					align={'center'}
