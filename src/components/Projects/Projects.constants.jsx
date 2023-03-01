@@ -3,6 +3,7 @@ import dribbbleLink from '../../assets/images/links/dribbble.svg';
 import gitLink from '../../assets/images/links/github.svg';
 import ytLink from '../../assets/images/links/youtube.svg';
 
+import jdsoftware from '../../assets/images/projects/jdsoftware.png';
 import portfolio from '../../assets/images/projects/portfolio.png';
 import livrator from '../../assets/images/projects/livrator.png';
 import ghicicuvantul from '../../assets/images/projects/gc.png';
@@ -27,6 +28,8 @@ import navui from '../../assets/images/projects/navui.png';
 import mplogo from '../../assets/images/projects/mplogo.png';
 import discoverro from '../../assets/images/projects/discover-ro.png';
 import vclp from '../../assets/images/projects/vclp.png';
+import vibenow from '../../assets/images/projects/vibenow.png';
+import dynamicmenu from '../../assets/images/projects/dynamicmenu.png';
 
 export const web = [
 	{
@@ -41,7 +44,10 @@ export const web = [
 		cover: livrator,
 		links: [{ icon: webLink, link: 'https://www.livrator.ro' }],
 	},
-	{ name: 'Ghiceste cuvantul', date: '2022-03-20', cover: ghicicuvantul, links: [{ icon: dribbbleLink, link: '#' }] },
+	{ name: 'Ghiceste cuvantul',
+		date: '2022-03-20',
+		cover: ghicicuvantul,
+		links: [{ icon: dribbbleLink, link: 'https://dribbble.com/shots/19659643-Ghiceste-cuvantul-Guess-the-word' }] },
 	{
 		name: 'Xbox Dashboard',
 		date: '2022-03-06',
@@ -79,6 +85,21 @@ export const web = [
 		links: [
 			{ icon: gitLink, link: 'https://github.com/eduardconstantin/Comic-book-button-anim' },
 			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/18145123-Button-Animation' },
+		],
+	},
+	{
+		name: 'JD Software',
+		date: '2022-08-14',
+		cover: jdsoftware,
+		links: [{ icon: webLink, link: 'http://www.jdsoftware.ro' }],
+	},
+	{
+		name: 'Dynamic Menu',
+		date: '2022-09-18',
+		cover: dynamicmenu,
+		links: [
+			{ icon: gitLink, link: 'https://github.com/eduardconstantin/dynamic-menu' },
+			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/19413730-Dynamic-Menu' }
 		],
 	},
 ];
@@ -130,6 +151,14 @@ export const design = [
 		links: [
 			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/19100552-Welcome-back-to-Vice-City-Landing-page' },
 			{ icon: ytLink, link: 'https://www.youtube.com/watch?v=ysBkWUQMLHQ' },
+		],
+	},
+	{
+		name: 'Vibe Now UI',
+		date: '2022-10-28',
+		cover: vibenow,
+		links: [
+			{ icon: dribbbleLink, link: 'https://dribbble.com/shots/20106594-Vibe-Now-Mobile-app-for-events' },
 		],
 	},
 ];
