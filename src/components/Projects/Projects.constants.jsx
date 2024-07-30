@@ -1,14 +1,14 @@
-import webLink from '../../assets/images/links/globe2.svg';
-import dribbbleLink from '../../assets/images/links/dribbble.svg';
-import gitLink from '../../assets/images/links/github.svg';
-import ytLink from '../../assets/images/links/youtube.svg';
+import webLink from "../../assets/images/links/globe2.svg";
+import dribbbleLink from "../../assets/images/links/dribbble.svg";
+import gitLink from "../../assets/images/links/github.svg";
+import ytLink from "../../assets/images/links/youtube.svg";
 
-import portfolio from '../../assets/images/projects/portfolio.png';
-import livrator from '../../assets/images/projects/livrator.png';
-import ghicicuvantul from '../../assets/images/projects/gc.png';
-import cryptocurrency from '../../assets/images/projects/cc.png';
-import traveldeck from '../../assets/images/projects/td.png';
-import xboxdash from '../../assets/images/projects/xd.png';
+import portfolio from "../../assets/images/projects/portfolio.png";
+import livrator from "../../assets/images/projects/livrator.png";
+import ghicicuvantul from "../../assets/images/projects/gc.png";
+import cryptocurrency from "../../assets/images/projects/cc.png";
+import traveldeck from "../../assets/images/projects/td.png";
+import xboxdash from "../../assets/images/projects/xd.png";
 import framerbtn from "../../assets/images/projects/framerbtn.png";
 import doticons from "../../assets/images/projects/doticons.png";
 import cs2btn from "../../assets/images/projects/cs2btn.png";
@@ -17,38 +17,44 @@ import storybookgenie from "../../assets/images/projects/storybookgenie.png";
 import azurecloudexams from "../../assets/images/projects/azurecloudexams.png";
 import habithero from "../../assets/images/projects/habithero.png";
 
-import geex from '../../assets/images/projects/geex.png';
-import tla from '../../assets/images/projects/tla.png';
-import arbachelor from '../../assets/images/projects/bachelor.png';
-import arlgtv from '../../assets/images/projects/arlg.png';
-import ardissertation from '../../assets/images/projects/dissertation.png';
-import arop7 from '../../assets/images/projects/arop7.png';
-import castleescape from '../../assets/images/projects/castleescape.png';
+import geex from "../../assets/images/projects/geex.png";
+import tla from "../../assets/images/projects/tla.png";
+import arbachelor from "../../assets/images/projects/bachelor.png";
+import arlgtv from "../../assets/images/projects/arlg.png";
+import ardissertation from "../../assets/images/projects/dissertation.png";
+import arop7 from "../../assets/images/projects/arop7.png";
+import castleescape from "../../assets/images/projects/castleescape.png";
 
-import smarthome from '../../assets/images/projects/smarthome.png';
-import godofwar from '../../assets/images/projects/godofwar.png';
-import itlogo from '../../assets/images/projects/intimelogo.png';
-import nyoologo from '../../assets/images/projects/ntoologo.png';
-import btnanim from '../../assets/images/projects/btnAnim.png';
-import navui from '../../assets/images/projects/navui.png';
-import mplogo from '../../assets/images/projects/mplogo.png';
-import discoverro from '../../assets/images/projects/discover-ro.png';
-import vclp from '../../assets/images/projects/vclp.png';
-import vibenow from '../../assets/images/projects/vibenow.png';
-import dynamicmenu from '../../assets/images/projects/dynamicmenu.png';
+import smarthome from "../../assets/images/projects/smarthome.png";
+import godofwar from "../../assets/images/projects/godofwar.png";
+import itlogo from "../../assets/images/projects/intimelogo.png";
+import nyoologo from "../../assets/images/projects/ntoologo.png";
+import btnanim from "../../assets/images/projects/btnAnim.png";
+import navui from "../../assets/images/projects/navui.png";
+import mplogo from "../../assets/images/projects/mplogo.png";
+import discoverro from "../../assets/images/projects/discover-ro.png";
+import vclp from "../../assets/images/projects/vclp.png";
+import vibenow from "../../assets/images/projects/vibenow.png";
+import dynamicmenu from "../../assets/images/projects/dynamicmenu.png";
 
 export const web = [
   {
     name: "Portfolio",
     date: "2022-05-08",
     cover: portfolio,
-    links: [{ icon: gitLink, link: "https://github.com/eduardconstantin/eduardconstantin.github.io" }],
+    links: [
+      { icon: gitLink, link: "https://github.com/eduardconstantin/eduardconstantin.github.io" },
+      { icon: dribbbleLink, link: "https://dribbble.com/shots/18191630-Personal-Portfolio-Website" },
+    ],
   },
   {
     name: "Livrator.ro",
     date: "2022-04-30",
     cover: livrator,
-    links: [{ icon: webLink, link: "https://www.livrator.ro" }],
+    links: [
+      { icon: webLink, link: "https://www.livrator.ro" },
+      { icon: dribbbleLink, link: "https://dribbble.com/shots/18250483-Livrator-ro-Website" },
+    ],
   },
   {
     name: "Xbox Dashboard",
@@ -78,15 +84,23 @@ export const web = [
     links: [
       { icon: gitLink, link: "https://github.com/eduardconstantin/react-motion-components" },
       { icon: dribbbleLink, link: "https://dribbble.com/shots/17766382-Navigation-menu-Animation-concept" },
+      {
+        icon: webLink,
+        link: "https://react-motion-components.vercel.app/?path=/docs/components-menus-navigation-menu--docs",
+      },
     ],
   },
   {
-    name: "Button Animation",
+    name: "Comic-book Button Animation",
     date: "2022-05-01",
     cover: btnanim,
     links: [
       { icon: gitLink, link: "https://github.com/eduardconstantin/react-motion-components" },
       { icon: dribbbleLink, link: "https://dribbble.com/shots/18145123-Button-Animation" },
+      {
+        icon: webLink,
+        link: "https://react-motion-components.vercel.app/?path=/docs/components-buttons-comic-book-button--docs",
+      },
     ],
   },
   {
@@ -96,6 +110,10 @@ export const web = [
     links: [
       { icon: gitLink, link: "https://github.com/eduardconstantin/react-motion-components" },
       { icon: dribbbleLink, link: "https://dribbble.com/shots/19413730-Dynamic-Menu" },
+      {
+        icon: webLink,
+        link: "https://react-motion-components.vercel.app/?path=/docs/components-menus-dynamic-menu--docs",
+      },
     ],
   },
   {
@@ -105,6 +123,10 @@ export const web = [
     links: [
       { icon: gitLink, link: "https://github.com/eduardconstantin/react-motion-components" },
       { icon: dribbbleLink, link: "https://dribbble.com/shots/21022811--Framer-AI-Button" },
+      {
+        icon: webLink,
+        link: "https://react-motion-components.vercel.app/?path=/docs/components-buttons-framer-ai-button--docs",
+      },
     ],
   },
   {
@@ -114,6 +136,7 @@ export const web = [
     links: [
       { icon: gitLink, link: "https://github.com/eduardconstantin/doticons" },
       { icon: dribbbleLink, link: "https://dribbble.com/shots/22023265-Doticons-A-collection-of-minimal-dot-icons" },
+      { icon: webLink, link: "https://doticons-website.vercel.app" },
     ],
   },
   {
@@ -123,14 +146,10 @@ export const web = [
     links: [
       { icon: gitLink, link: "https://github.com/eduardconstantin/react-motion-components" },
       { icon: dribbbleLink, link: "https://dribbble.com/shots/22517905-Counter-Strike-2-Button" },
-    ],
-  },
-  {
-    name: "ExplorEasy",
-    date: "2023-11-28",
-    cover: exploreasy,
-    links: [
-      { icon: dribbbleLink, link: "https://dribbble.com/shots/23144020-ExplorEasy-Generative-travel-itineraries" },
+      {
+        icon: webLink,
+        link: "https://react-motion-components.vercel.app/?path=/docs/components-buttons-counter-strike-2-button--docs",
+      },
     ],
   },
   {
@@ -145,7 +164,10 @@ export const web = [
     name: "Storybook Genie",
     date: "2024-03-05",
     cover: storybookgenie,
-    links: [{ icon: gitLink, link: "https://github.com/eduardconstantin/storybook-genie" }],
+    links: [
+      { icon: gitLink, link: "https://github.com/eduardconstantin/storybook-genie" },
+      { icon: webLink, link: "https://www.npmjs.com/package/storybook-genie" },
+    ],
   },
   {
     name: "Azure Cloud Exams",
@@ -157,6 +179,7 @@ export const web = [
         icon: dribbbleLink,
         link: "https://dribbble.com/shots/23997521-Azure-Cloud-Exams-A-Community-Driven-Open-Source-Project",
       },
+      { icon: webLink, link: "https://nice-sky-0509a9903.2.azurestaticapps.net" },
     ],
   },
   {
