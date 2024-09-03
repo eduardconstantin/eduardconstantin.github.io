@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.556ef807.css",
-    "main.js": "/static/js/main.2f39c5dc.js",
+    "main.css": "/static/css/main.32f27fa4.css",
+    "main.js": "/static/js/main.ba2cecb9.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/vclp.png": "/static/media/vclp.8327fb3748ae8b5d5774.png",
     "static/media/discover-ro.png": "/static/media/discover-ro.8852ae61067b161c45ef.png",
@@ -25,6 +25,7 @@
     "static/media/smarthome.png": "/static/media/smarthome.ecfc4d88931ef61a0898.png",
     "static/media/castleescape.png": "/static/media/castleescape.7197bcd4091295ba0870.png",
     "static/media/xd.png": "/static/media/xd.f34084eb011e5fa8edaa.png",
+    "static/media/goomenu.png": "/static/media/goomenu.a1d55dcac7c4855eb4da.png",
     "static/media/doticons.png": "/static/media/doticons.74d25bcf8e5cc9bdf42a.png",
     "static/media/storybookgenie.png": "/static/media/storybookgenie.9cd02a85088138dd5fd4.png",
     "static/media/mplogo.png": "/static/media/mplogo.653bc6a55aa3401d38d7.png",
@@ -39,11 +40,11 @@
     "index.html": "/index.html",
     "static/media/youtube.svg": "/static/media/youtube.1d26071402f4b2c4c4db63cd1137f514.svg",
     "static/media/github.svg": "/static/media/github.049a66df24a80bf61f1a560bf8be92f2.svg",
-    "main.556ef807.css.map": "/static/css/main.556ef807.css.map",
-    "main.2f39c5dc.js.map": "/static/js/main.2f39c5dc.js.map"
+    "main.32f27fa4.css.map": "/static/css/main.32f27fa4.css.map",
+    "main.ba2cecb9.js.map": "/static/js/main.ba2cecb9.js.map"
   },
   "entrypoints": [
-    "static/css/main.556ef807.css",
-    "static/js/main.2f39c5dc.js"
+    "static/css/main.32f27fa4.css",
+    "static/js/main.ba2cecb9.js"
   ]
 }
