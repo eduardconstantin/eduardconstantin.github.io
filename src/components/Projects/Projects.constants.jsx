@@ -36,6 +36,7 @@ import discoverro from "../../assets/images/projects/discover-ro.png";
 import vclp from "../../assets/images/projects/vclp.png";
 import vibenow from "../../assets/images/projects/vibenow.png";
 import dynamicmenu from "../../assets/images/projects/dynamicmenu.png";
+import goomenu from "../../assets/images/projects/goomenu.png";
 
 export const web = [
   {
@@ -190,6 +191,22 @@ export const web = [
       {
         icon: dribbbleLink,
         link: "https://dribbble.com/shots/24592614-Habit-Hero-Generative-scheduling-web-app",
+      },
+    ],
+  },
+  {
+    name: "Goomorphic Menu",
+    date: "2024-08-25",
+    cover: goomenu,
+    links: [
+      { icon: gitLink, link: "https://github.com/eduardconstantin/react-motion-components" },
+      {
+        icon: dribbbleLink,
+        link: "https://dribbble.com/shots/24745412-Goomorphic-Menu",
+      },
+      {
+        icon: webLink,
+        link: "https://react-motion-components.vercel.app/?path=/story/components-menus-goomorphic-menu--default",
       },
     ],
   },
