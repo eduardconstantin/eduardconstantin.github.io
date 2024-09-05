@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.32f27fa4.css",
-    "main.js": "/static/js/main.ba2cecb9.js",
+    "main.js": "/static/js/main.9df4e18c.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/vclp.png": "/static/media/vclp.8327fb3748ae8b5d5774.png",
     "static/media/discover-ro.png": "/static/media/discover-ro.8852ae61067b161c45ef.png",
@@ -41,10 +41,10 @@
     "static/media/youtube.svg": "/static/media/youtube.1d26071402f4b2c4c4db63cd1137f514.svg",
     "static/media/github.svg": "/static/media/github.049a66df24a80bf61f1a560bf8be92f2.svg",
     "main.32f27fa4.css.map": "/static/css/main.32f27fa4.css.map",
-    "main.ba2cecb9.js.map": "/static/js/main.ba2cecb9.js.map"
+    "main.9df4e18c.js.map": "/static/js/main.9df4e18c.js.map"
   },
   "entrypoints": [
     "static/css/main.32f27fa4.css",
-    "static/js/main.ba2cecb9.js"
+    "static/js/main.9df4e18c.js"
   ]
 }
