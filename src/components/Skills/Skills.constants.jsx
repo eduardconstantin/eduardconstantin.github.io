@@ -42,7 +42,7 @@ export const skillCat = {
     percentage: 30,
     skillList: [
       { name: "Photoshop", xp: "16 YRS", icon: psIcon },
-      { name: "Figma", xp: "3 YR", icon: figmaIcon },
+      { name: "Figma", xp: "3 YRS", icon: figmaIcon },
     ],
   },
   soft: {
