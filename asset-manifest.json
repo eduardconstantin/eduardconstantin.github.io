@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.32f27fa4.css",
-    "main.js": "/static/js/main.9df4e18c.js",
+    "main.js": "/static/js/main.870c8623.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/vclp.png": "/static/media/vclp.8327fb3748ae8b5d5774.png",
     "static/media/discover-ro.png": "/static/media/discover-ro.8852ae61067b161c45ef.png",
@@ -29,6 +29,7 @@
     "static/media/doticons.png": "/static/media/doticons.74d25bcf8e5cc9bdf42a.png",
     "static/media/storybookgenie.png": "/static/media/storybookgenie.9cd02a85088138dd5fd4.png",
     "static/media/mplogo.png": "/static/media/mplogo.653bc6a55aa3401d38d7.png",
+    "static/media/goocard.png": "/static/media/goocard.a66424faf66fc95a4a16.png",
     "static/media/dynamicmenu.png": "/static/media/dynamicmenu.f3b63751f0ad1bbb73c7.png",
     "static/media/cc.png": "/static/media/cc.ee9efd77d484d1ff7a7e.png",
     "static/media/intimelogo.png": "/static/media/intimelogo.6266e2674a5ee82eb291.png",
@@ -41,10 +42,10 @@
     "static/media/youtube.svg": "/static/media/youtube.1d26071402f4b2c4c4db63cd1137f514.svg",
     "static/media/github.svg": "/static/media/github.049a66df24a80bf61f1a560bf8be92f2.svg",
     "main.32f27fa4.css.map": "/static/css/main.32f27fa4.css.map",
-    "main.9df4e18c.js.map": "/static/js/main.9df4e18c.js.map"
+    "main.870c8623.js.map": "/static/js/main.870c8623.js.map"
   },
   "entrypoints": [
     "static/css/main.32f27fa4.css",
-    "static/js/main.9df4e18c.js"
+    "static/js/main.870c8623.js"
   ]
 }
